@@ -233,10 +233,10 @@ Requires:	xorg-xserver-server
 Provides:	XFree86-devel = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-devel
-Obsoletes:	XFree86-DPS-devel
 Obsoletes:	X11-OpenGL-devel
-Obsoletes:	XFree86-OpenGL-devel
 Obsoletes:	X11-OpenGL-devel-base
+Obsoletes:	XFree86-DPS-devel
+Obsoletes:	XFree86-OpenGL-devel
 Obsoletes:	XFree86-OpenGL-devel-base
 
 %description -n X11-devel
@@ -269,13 +269,27 @@ Provides:	XFree86-driver-ark = %{epoch}:%{version}-%{release}
 Summary:	driver-ati package that allows easier X11->xorg upgrade
 Group:		X11
 Requires:	xorg-driver-video-ati
-Provides:	X11-driver-r128 = %{epoch}:%{version}-%{release}
-Provides:	X11-driver-radeon = %{epoch}:%{version}-%{release}
 Provides:	XFree86-driver-ati = %{epoch}:%{version}-%{release}
-Obsoletes:	X11-driver-r128
-Obsoletes:	X11-driver-radeon
 
 %description -n X11-driver-ati
+
+%package -n X11-driver-radeon
+Summary:	driver-radeon package that allows easier X11->xorg upgrade
+Group:		X11
+Requires:	xorg-driver-video-ati
+Provides:	X11-driver-radeon = %{epoch}:%{version}-%{release}
+Provides:	XFree86-driver-radeon = %{epoch}:%{version}-%{release}
+
+%description -n X11-driver-radeon
+
+%package -n X11-driver-r128
+Summary:	driver-r128 package that allows easier X11->xorg upgrade
+Group:		X11
+Requires:	xorg-driver-video-ati
+Provides:	X11-driver-r128 = %{epoch}:%{version}-%{release}
+Provides:	XFree86-driver-r128 = %{epoch}:%{version}-%{release}
+
+%description -n X11-driver-r128
 
 %package -n X11-driver-r128-dri
 Summary:	driver-r128-dri package that allows easier X11->xorg upgrade
@@ -637,13 +651,13 @@ Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
 # Rest of libs deps will be fetched on per so-name rule.
 # Common obsoletes:
 Obsoletes:	X11-DPS
-Obsoletes:	XFree86-DPS
-Obsoletes:	X11-common
-Obsoletes:	XFree86-common
 Obsoletes:	X11-OpenGL-core
-Obsoletes:	XFree86-OpenGL-core
 Obsoletes:	X11-OpenGL-libGL
+Obsoletes:	X11-common
+Obsoletes:	XFree86-DPS
+Obsoletes:	XFree86-OpenGL-core
 Obsoletes:	XFree86-OpenGL-libGL
+Obsoletes:	XFree86-common
 
 %description -n X11-libs
 
@@ -710,8 +724,8 @@ Requires:	xorg-lib-libxkbui-static
 Provides:	XFree86-static = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-static
-Obsoletes:	XFree86-DPS-static
 Obsoletes:	X11-OpenGL-static
+Obsoletes:	XFree86-DPS-static
 Obsoletes:	XFree86-OpenGL-static
 
 %description -n X11-static
@@ -755,6 +769,13 @@ Requires:	xorg-app-xprop
 Requires:	xorg-app-xtrap
 Requires:	xorg-app-xwininfo
 Provides:	XFree86-tools = %{epoch}:%{version}-%{release}
+# common obsoletes
+Obsoletes:	X11-DPS
+Obsoletes:	X11-DPS-devel
+Obsoletes:	X11-DPS-static
+Obsoletes:	XFree86-DPS
+Obsoletes:	XFree86-DPS-devel
+Obsoletes:	XFree86-DPS-static
 
 %description -n X11-tools
 
@@ -807,6 +828,33 @@ Provides:	XFree86-xfs = %{epoch}:%{version}-%{release}
 
 %description -n X11-xfs
 
+%package -n X11-fonts
+Summary:	fonts package that allows easier X11->xorg upgrade
+Group:		X11
+Requires:	xorg-font-encodings
+Requires:	xorg-font-font-adobe-utopia-type1
+Requires:	xorg-font-font-arabic-misc
+Requires:	xorg-font-font-bh-ttf
+Requires:	xorg-font-font-bh-type1
+Requires:	xorg-font-font-bitstream-type1
+Requires:	xorg-font-font-daewoo-misc
+Requires:	xorg-font-font-dec-misc
+Requires:	xorg-font-font-ibm-type1
+Requires:	xorg-font-font-isas-misc
+Requires:	xorg-font-font-micro-misc
+Requires:	xorg-font-font-misc-ethiopic
+Requires:	xorg-font-font-misc-meltho
+Requires:	xorg-font-font-misc-misc
+Requires:	xorg-font-font-mutt-misc
+Requires:	xorg-font-font-schumacher-misc
+Requires:	xorg-font-font-sony-misc
+Requires:	xorg-font-font-sun-misc
+Requires:	xorg-font-font-xfree86-type1
+Provides:	XFree86-fonts = %{epoch}:%{version}-%{release}
+
+%description -n X11-fonts
+
+
 %package -n X11-fonts-base
 Summary:	fonts-base package that allows easier X11->xorg upgrade
 Group:		X11
@@ -853,6 +901,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 #%files -n X11-driver-ati
 #%defattr(644,root,root,755)
+%files -n X11-driver-radeon
+%defattr(644,root,root,755)
+%files -n X11-driver-r128
+%defattr(644,root,root,755)
 %files -n X11-driver-r128-dri
 %defattr(644,root,root,755)
 %files -n X11-driver-radeon-dri
@@ -961,5 +1013,7 @@ rm -rf $RPM_BUILD_ROOT
 #%defattr(644,root,root,755)
 #%files -n X11-xfs
 #%defattr(644,root,root,755)
-%files -n X11-fonts-base
+%files -n X11-fonts
 %defattr(644,root,root,755)
+#%files -n X11-fonts-base
+#%defattr(644,root,root,755)
