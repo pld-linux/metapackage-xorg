@@ -1430,8 +1430,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-neomagic
 %defattr(644,root,root,755)
+%ifarch mips
 %files -n X11-driver-newport
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-nsc
 %defattr(644,root,root,755)
 %files -n X11-driver-nv
@@ -1452,6 +1454,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-sisusb
 %defattr(644,root,root,755)
+%ifarch sparc sparcv9 sparc64
 %files -n X11-driver-sunbw2
 %defattr(644,root,root,755)
 %files -n X11-driver-suncg14
@@ -1466,6 +1469,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-suntcx
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-tdfx
 %defattr(644,root,root,755)
 %files -n X11-driver-tdfx-dri
