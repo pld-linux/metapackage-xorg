@@ -306,7 +306,6 @@ Requires:	xorg-proto-xf86vidmodeproto-devel
 Requires:	xorg-proto-xineramaproto-devel
 Requires:	xorg-proto-xproto-devel
 Requires:	xorg-proto-xproxymanagementprotocol-devel
-Requires:	xorg-xserver-server
 Provides:	XFree86-devel = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-devel
