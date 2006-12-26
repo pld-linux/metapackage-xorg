@@ -2,7 +2,6 @@
 # TODO:
 # X11-driver-glide ??
 # X11-driver-glint-dri - ??
-# X11-driver-ffb ?
 
 Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl):	Metapakiet u³atwiaj±cy przej¶cie z monolitycznego X11 na modularne xorg
@@ -509,20 +508,6 @@ upgrade.
 
 %description -n X11-driver-fbdev -l pl
 Pakiet driver-fbdev u³atwiaj±cy przej¶cie z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-ffb
-Summary:	driver-ffb package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-ffb u³atwiaj±cy przej¶cie z monolitycznego X11 na modularne xorg
-Group:		X11
-Provides:	XFree86-driver-ffb = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-ffb
-driver-ffb package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-ffb -l pl
-Pakiet driver-ffb u³atwiaj±cy przej¶cie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-glide
@@ -1422,8 +1407,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -n X11-driver-cyrix
 %defattr(644,root,root,755)
 %files -n X11-driver-fbdev
-%defattr(644,root,root,755)
-%files -n X11-driver-ffb
 %defattr(644,root,root,755)
 %files -n X11-driver-glide
 %defattr(644,root,root,755)
