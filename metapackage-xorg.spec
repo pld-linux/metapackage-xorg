@@ -900,6 +900,7 @@ modularne xorg.
 Summary:	driver-sunffb package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl):	Pakiet driver-sunffb u³atwiaj±cy przej¶cie z monolitycznego X11 na modularne xorg
 Group:		X11
+Requires:	Mesa-dri-driver-ffb
 Requires:	xorg-driver-video-sunffb
 Provides:	XFree86-driver-sunffb = %{epoch}:%{version}-%{release}
 
