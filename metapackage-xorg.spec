@@ -1,6 +1,5 @@
 
 # TODO:
-# X11-driver-glide ??
 # X11-driver-glint-dri - ??
 
 Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
@@ -514,6 +513,7 @@ modularne xorg.
 Summary:	driver-glide package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl):	Pakiet driver-glide u³atwiaj±cy przej¶cie z monolitycznego X11 na modularne xorg
 Group:		X11
+Requires:	xorg-driver-video-voodoo
 Provides:	XFree86-driver-glide = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-glide
