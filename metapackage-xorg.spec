@@ -1,7 +1,7 @@
 Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl):	Metapakiet u³atwiaj±cy przej¶cie z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
-Version:	6.10
+Version:	7.0.0
 Release:	0.1
 Epoch:		1
 License:	GPL
@@ -1359,36 +1359,36 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-Xprint
 %defattr(644,root,root,755)
-#%files -n X11-OpenGL-core
-#%defattr(644,root,root,755)
-#%files -n X11-OpenGL-libGL
-#%defattr(644,root,root,755)
-#%files -n X11-OpenGL-libs
-#%defattr(644,root,root,755)
-#%files -n X11-OpenGL-devel-base
-#%defattr(644,root,root,755)
-#%files -n X11-OpenGL-devel
-#%defattr(644,root,root,755)
-#%files -n X11-OpenGL-static
-#%defattr(644,root,root,755)
-#%files -n X11-Xnest
-#%defattr(644,root,root,755)
-#%files -n X11-Xprt
-#%defattr(644,root,root,755)
-#%files -n X11-Xserver
-#%defattr(644,root,root,755)
-#%files -n X11-Xvfb
-#%defattr(644,root,root,755)
+%files -n X11-OpenGL-core
+%defattr(644,root,root,755)
+%files -n X11-OpenGL-libGL
+%defattr(644,root,root,755)
+%files -n X11-OpenGL-libs
+%defattr(644,root,root,755)
+%files -n X11-OpenGL-devel-base
+%defattr(644,root,root,755)
+%files -n X11-OpenGL-devel
+%defattr(644,root,root,755)
+%files -n X11-OpenGL-static
+%defattr(644,root,root,755)
+%files -n X11-Xnest
+%defattr(644,root,root,755)
+%files -n X11-Xprt
+%defattr(644,root,root,755)
+%files -n X11-Xserver
+%defattr(644,root,root,755)
+%files -n X11-Xvfb
+%defattr(644,root,root,755)
 %files -n X11-devel
 %defattr(644,root,root,755)
-#%files -n X11-Xserver-devel
-#%defattr(644,root,root,755)
+%files -n X11-Xserver-devel
+%defattr(644,root,root,755)
 %files -n X11-driver-apm
 %defattr(644,root,root,755)
 %files -n X11-driver-ark
 %defattr(644,root,root,755)
-#%files -n X11-driver-ati
-#%defattr(644,root,root,755)
+%files -n X11-driver-ati
+%defattr(644,root,root,755)
 %files -n X11-driver-radeon
 %defattr(644,root,root,755)
 %files -n X11-driver-r128
@@ -1483,27 +1483,27 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-libs
 %defattr(644,root,root,755)
-#%files -n X11-modules
-#%defattr(644,root,root,755)
+%files -n X11-modules
+%defattr(644,root,root,755)
 %files -n X11-setup
 %defattr(644,root,root,755)
 %files -n X11-static
 %defattr(644,root,root,755)
 %files -n X11-tools
 %defattr(644,root,root,755)
-#%files -n X11-imake
-#%defattr(644,root,root,755)
-#%files -n X11-sessreg
-#%defattr(644,root,root,755)
-#%files -n X11-twm
-#%defattr(644,root,root,755)
-#%files -n X11-xauth
-#%defattr(644,root,root,755)
-#%files -n X11-xdm
-#%defattr(644,root,root,755)
-#%files -n X11-xfs
-#%defattr(644,root,root,755)
+%files -n X11-imake
+%defattr(644,root,root,755)
+%files -n X11-sessreg
+%defattr(644,root,root,755)
+%files -n X11-twm
+%defattr(644,root,root,755)
+%files -n X11-xauth
+%defattr(644,root,root,755)
+%files -n X11-xdm
+%defattr(644,root,root,755)
+%files -n X11-xfs
+%defattr(644,root,root,755)
 %files -n X11-fonts
 %defattr(644,root,root,755)
-#%files -n X11-fonts-base
-#%defattr(644,root,root,755)
+%files -n X11-fonts-base
+%defattr(644,root,root,755)
