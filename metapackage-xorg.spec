@@ -1,5 +1,5 @@
 Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Metapakiet u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Metapakiet u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
 Release:	0.1
@@ -12,12 +12,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Metapackage that allows easier monolithic X11->modular xorg upgrade.
 
-%description -l pl
-Metapakiet u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg.
+%description -l pl.UTF-8
+Metapakiet u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg.
 
 %package -n X11
 Summary:	X11 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet X11 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet X11 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-appres
 Requires:	xorg-app-bitmap
@@ -79,13 +79,13 @@ Provides:	XFree86 = %{epoch}:%{version}-%{release}
 %description -n X11
 X11 package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11 -l pl
-Pakiet X11 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11 -l pl.UTF-8
+Pakiet X11 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-Xprint
 Summary:	Xprint package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet Xprint u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet Xprint u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-Xprt
 Provides:	XFree86-Xprint = %{epoch}:%{version}-%{release}
@@ -94,13 +94,13 @@ Provides:	XFree86-Xprint = %{epoch}:%{version}-%{release}
 Xprint package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-Xprint -l pl
-Pakiet Xprint u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-Xprint -l pl.UTF-8
+Pakiet Xprint u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-OpenGL-core
 Summary:	OpenGL-core package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet OpenGL-core u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet OpenGL-core u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-server
 Provides:	XFree86-OpenGL-core = %{epoch}:%{version}-%{release}
@@ -109,13 +109,13 @@ Provides:	XFree86-OpenGL-core = %{epoch}:%{version}-%{release}
 OpenGL-core package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-OpenGL-core -l pl
-Pakiet OpenGL-core u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-OpenGL-core -l pl.UTF-8
+Pakiet OpenGL-core u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-OpenGL-libGL
 Summary:	OpenGL-libGL package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet OpenGL-libGL u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet OpenGL-libGL u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-libGL
 Provides:	XFree86-OpenGL-libGL = %{epoch}:%{version}-%{release}
@@ -124,13 +124,13 @@ Provides:	XFree86-OpenGL-libGL = %{epoch}:%{version}-%{release}
 OpenGL-libGL package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-OpenGL-libGL -l pl
-Pakiet OpenGL-libGL u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-OpenGL-libGL -l pl.UTF-8
+Pakiet OpenGL-libGL u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-OpenGL-libs
 Summary:	OpenGL-libs package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet OpenGL-libs u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet OpenGL-libs u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-libGLU
 Requires:	Mesa-utils
@@ -140,13 +140,13 @@ Provides:	XFree86-OpenGL-libs = %{epoch}:%{version}-%{release}
 OpenGL-libs package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-OpenGL-libs -l pl
-Pakiet OpenGL-libs u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-OpenGL-libs -l pl.UTF-8
+Pakiet OpenGL-libs u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-OpenGL-devel-base
 Summary:	OpenGL-devel-base package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet OpenGL-devel-base u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet OpenGL-devel-base u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Provides:	XFree86-OpenGL-devel-base = %{epoch}:%{version}-%{release}
 
@@ -154,13 +154,13 @@ Provides:	XFree86-OpenGL-devel-base = %{epoch}:%{version}-%{release}
 OpenGL-devel-base package that allows easier monolithic X11->modular
 xorg upgrade.
 
-%description -n X11-OpenGL-devel-base -l pl
-Pakiet OpenGL-devel-base u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-OpenGL-devel-base -l pl.UTF-8
+Pakiet OpenGL-devel-base u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-OpenGL-devel
 Summary:	OpenGL-devel package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet OpenGL-devel u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet OpenGL-devel u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-libGL-devel
 Provides:	XFree86-OpenGL-devel = %{epoch}:%{version}-%{release}
@@ -169,13 +169,13 @@ Provides:	XFree86-OpenGL-devel = %{epoch}:%{version}-%{release}
 OpenGL-devel package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-OpenGL-devel -l pl
-Pakiet OpenGL-devel u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-OpenGL-devel -l pl.UTF-8
+Pakiet OpenGL-devel u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-OpenGL-static
 Summary:	OpenGL-static package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet OpenGL-static u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet OpenGL-static u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-libGL-static
 Provides:	XFree86-OpenGL-static = %{epoch}:%{version}-%{release}
@@ -184,13 +184,13 @@ Provides:	XFree86-OpenGL-static = %{epoch}:%{version}-%{release}
 OpenGL-static package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-OpenGL-static -l pl
-Pakiet OpenGL-static u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-OpenGL-static -l pl.UTF-8
+Pakiet OpenGL-static u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-Xnest
 Summary:	Xnest package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet Xnest u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet Xnest u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-Xnest
 Provides:	XFree86-Xnest = %{epoch}:%{version}-%{release}
@@ -198,12 +198,12 @@ Provides:	XFree86-Xnest = %{epoch}:%{version}-%{release}
 %description -n X11-Xnest
 Xnest package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-Xnest -l pl
-Pakiet Xnest u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg.
+%description -n X11-Xnest -l pl.UTF-8
+Pakiet Xnest u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg.
 
 %package -n X11-Xprt
 Summary:	Xprt package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet Xprt u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet Xprt u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-Xprt
 Provides:	XFree86-Xprt = %{epoch}:%{version}-%{release}
@@ -211,12 +211,12 @@ Provides:	XFree86-Xprt = %{epoch}:%{version}-%{release}
 %description -n X11-Xprt
 Xprt package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-Xprt -l pl
-Pakiet Xprt u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg.
+%description -n X11-Xprt -l pl.UTF-8
+Pakiet Xprt u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg.
 
 %package -n X11-Xserver
 Summary:	Xserver package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet Xserver u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet Xserver u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-server
 Provides:	XFree86-Xserver = %{epoch}:%{version}-%{release}
@@ -225,13 +225,13 @@ Provides:	XFree86-Xserver = %{epoch}:%{version}-%{release}
 Xserver package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-Xserver -l pl
-Pakiet Xserver u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-Xserver -l pl.UTF-8
+Pakiet Xserver u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-Xvfb
 Summary:	Xvfb package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet Xvfb u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet Xvfb u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-Xvfb
 Provides:	XFree86-Xvfb = %{epoch}:%{version}-%{release}
@@ -239,13 +239,13 @@ Provides:	XFree86-Xvfb = %{epoch}:%{version}-%{release}
 %description -n X11-Xvfb
 Xvfb package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-Xvfb -l pl
-Pakiet Xvfb u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-Xvfb -l pl.UTF-8
+Pakiet Xvfb u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-devel
 Summary:	devel package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet devel u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet devel u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-bdftopcf
 Requires:	xorg-lib-libFS-devel
@@ -318,13 +318,13 @@ Obsoletes:	XFree86-OpenGL-devel-base
 %description -n X11-devel
 devel package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-devel -l pl
-Pakiet devel u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-devel -l pl.UTF-8
+Pakiet devel u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-Xserver-devel
 Summary:	Xserver-devel package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet Xserver-devel u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet Xserver-devel u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-server-devel
 Provides:	XFree86-Xserver-devel = %{epoch}:%{version}-%{release}
@@ -333,13 +333,13 @@ Provides:	XFree86-Xserver-devel = %{epoch}:%{version}-%{release}
 Xserver-devel package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-Xserver-devel -l pl
-Pakiet Xserver-devel u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-Xserver-devel -l pl.UTF-8
+Pakiet Xserver-devel u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-apm
 Summary:	driver-apm package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-apm u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-apm u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-apm
 Provides:	XFree86-driver-apm = %{epoch}:%{version}-%{release}
@@ -348,13 +348,13 @@ Provides:	XFree86-driver-apm = %{epoch}:%{version}-%{release}
 driver-apm package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-apm -l pl
-Pakiet driver-apm u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-apm -l pl.UTF-8
+Pakiet driver-apm u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-ark
 Summary:	driver-ark package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-ark u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-ark u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-ark
 Provides:	XFree86-driver-ark = %{epoch}:%{version}-%{release}
@@ -363,13 +363,13 @@ Provides:	XFree86-driver-ark = %{epoch}:%{version}-%{release}
 driver-ark package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-ark -l pl
-Pakiet driver-ark u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-ark -l pl.UTF-8
+Pakiet driver-ark u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-ati
 Summary:	driver-ati package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-ati u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-ati u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-ati
 Provides:	XFree86-driver-ati = %{epoch}:%{version}-%{release}
@@ -378,13 +378,13 @@ Provides:	XFree86-driver-ati = %{epoch}:%{version}-%{release}
 driver-ati package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-ati -l pl
-Pakiet driver-ati u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-ati -l pl.UTF-8
+Pakiet driver-ati u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-radeon
 Summary:	driver-radeon package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-radeon u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-radeon u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-ati
 Provides:	X11-driver-radeon = %{epoch}:%{version}-%{release}
@@ -394,13 +394,13 @@ Provides:	XFree86-driver-radeon = %{epoch}:%{version}-%{release}
 driver-radeon package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-radeon -l pl
-Pakiet driver-radeon u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-radeon -l pl.UTF-8
+Pakiet driver-radeon u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-r128
 Summary:	driver-r128 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-r128 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-r128 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-ati
 Provides:	X11-driver-r128 = %{epoch}:%{version}-%{release}
@@ -410,13 +410,13 @@ Provides:	XFree86-driver-r128 = %{epoch}:%{version}-%{release}
 driver-r128 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-r128 -l pl
-Pakiet driver-r128 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-r128 -l pl.UTF-8
+Pakiet driver-r128 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-r128-dri
 Summary:	driver-r128-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-r128-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-r128-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-ati-rage128
 Provides:	XFree86-driver-r128-dri = %{epoch}:%{version}-%{release}
@@ -425,13 +425,13 @@ Provides:	XFree86-driver-r128-dri = %{epoch}:%{version}-%{release}
 driver-r128-dri package that allows easier monolithic X11->modular
 xorg upgrade.
 
-%description -n X11-driver-r128-dri -l pl
-Pakiet driver-r128-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-r128-dri -l pl.UTF-8
+Pakiet driver-r128-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-radeon-dri
 Summary:	driver-radeon-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-radeon-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-radeon-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-ati-radeon-R100
 Requires:	Mesa-dri-driver-ati-radeon-R200
@@ -441,12 +441,12 @@ Provides:	XFree86-driver-radeon-dri = %{epoch}:%{version}-%{release}
 %description -n X11-driver-radeon-dri
 driver-radeon-dri package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-driver-radeon-dri -l pl
-Pakiet driver-radeon-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg.
+%description -n X11-driver-radeon-dri -l pl.UTF-8
+Pakiet driver-radeon-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg.
 
 %package -n X11-driver-chips
 Summary:	driver-chips package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-chips u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-chips u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-chips
 Provides:	XFree86-driver-chips = %{epoch}:%{version}-%{release}
@@ -455,13 +455,13 @@ Provides:	XFree86-driver-chips = %{epoch}:%{version}-%{release}
 driver-chips package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-chips -l pl
-Pakiet driver-chips u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-chips -l pl.UTF-8
+Pakiet driver-chips u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-cirrus
 Summary:	driver-cirrus package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-cirrus u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-cirrus u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-cirrus
 Provides:	XFree86-driver-cirrus = %{epoch}:%{version}-%{release}
@@ -470,13 +470,13 @@ Provides:	XFree86-driver-cirrus = %{epoch}:%{version}-%{release}
 driver-cirrus package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-cirrus -l pl
-Pakiet driver-cirrus u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-cirrus -l pl.UTF-8
+Pakiet driver-cirrus u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-cyrix
 Summary:	driver-cyrix package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-cyrix u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-cyrix u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-cyrix
 Provides:	XFree86-driver-cyrix = %{epoch}:%{version}-%{release}
@@ -485,13 +485,13 @@ Provides:	XFree86-driver-cyrix = %{epoch}:%{version}-%{release}
 driver-cyrix package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-cyrix -l pl
-Pakiet driver-cyrix u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-cyrix -l pl.UTF-8
+Pakiet driver-cyrix u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-fbdev
 Summary:	driver-fbdev package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-fbdev u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-fbdev u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-fbdev
 Provides:	XFree86-driver-fbdev = %{epoch}:%{version}-%{release}
@@ -500,13 +500,13 @@ Provides:	XFree86-driver-fbdev = %{epoch}:%{version}-%{release}
 driver-fbdev package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-fbdev -l pl
-Pakiet driver-fbdev u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-fbdev -l pl.UTF-8
+Pakiet driver-fbdev u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-glide
 Summary:	driver-glide package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-glide u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-glide u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-voodoo
 Provides:	XFree86-driver-glide = %{epoch}:%{version}-%{release}
@@ -515,13 +515,13 @@ Provides:	XFree86-driver-glide = %{epoch}:%{version}-%{release}
 driver-glide package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-glide -l pl
-Pakiet driver-glide u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-glide -l pl.UTF-8
+Pakiet driver-glide u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-glint
 Summary:	driver-glint package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-glint u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-glint u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-glint
 Provides:	XFree86-driver-glint = %{epoch}:%{version}-%{release}
@@ -530,13 +530,13 @@ Provides:	XFree86-driver-glint = %{epoch}:%{version}-%{release}
 driver-glint package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-glint -l pl
-Pakiet driver-glint u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-glint -l pl.UTF-8
+Pakiet driver-glint u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-glint-dri
 Summary:	driver-glint-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-glint-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-glint-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-glint
 Provides:	XFree86-driver-glint-dri = %{epoch}:%{version}-%{release}
@@ -545,13 +545,13 @@ Provides:	XFree86-driver-glint-dri = %{epoch}:%{version}-%{release}
 driver-glint-dri package that allows easier monolithic X11->modular
 xorg upgrade.
 
-%description -n X11-driver-glint-dri -l pl
-Pakiet driver-glint-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-glint-dri -l pl.UTF-8
+Pakiet driver-glint-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-i128
 Summary:	driver-i128 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-i128 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-i128 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-i128
 Provides:	XFree86-driver-i128 = %{epoch}:%{version}-%{release}
@@ -560,13 +560,13 @@ Provides:	XFree86-driver-i128 = %{epoch}:%{version}-%{release}
 driver-i128 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-i128 -l pl
-Pakiet driver-i128 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-i128 -l pl.UTF-8
+Pakiet driver-i128 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-i2c
 Summary:	driver-i2c package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-i2c u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-i2c u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-server
 Provides:	XFree86-driver-i2c = %{epoch}:%{version}-%{release}
@@ -575,13 +575,13 @@ Provides:	XFree86-driver-i2c = %{epoch}:%{version}-%{release}
 driver-i2c package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-i2c -l pl
-Pakiet driver-i2c u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-i2c -l pl.UTF-8
+Pakiet driver-i2c u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-i740
 Summary:	driver-i740 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-i740 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-i740 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-i740
 Provides:	XFree86-driver-i740 = %{epoch}:%{version}-%{release}
@@ -590,13 +590,13 @@ Provides:	XFree86-driver-i740 = %{epoch}:%{version}-%{release}
 driver-i740 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-i740 -l pl
-Pakiet driver-i740 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-i740 -l pl.UTF-8
+Pakiet driver-i740 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-i810
 Summary:	driver-i810 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-i810 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-i810 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-i810
 Provides:	XFree86-driver-i810 = %{epoch}:%{version}-%{release}
@@ -605,13 +605,13 @@ Provides:	XFree86-driver-i810 = %{epoch}:%{version}-%{release}
 driver-i810 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-i810 -l pl
-Pakiet driver-i810 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-i810 -l pl.UTF-8
+Pakiet driver-i810 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-i810-dri
 Summary:	driver-i810-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-i810-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-i810-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-intel-i810
 Requires:	Mesa-dri-driver-intel-i915
@@ -622,13 +622,13 @@ Provides:	XFree86-driver-i810-dri = %{epoch}:%{version}-%{release}
 driver-i810-dri package that allows easier monolithic X11->modular
 xorg upgrade.
 
-%description -n X11-driver-i810-dri -l pl
-Pakiet driver-i810-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-i810-dri -l pl.UTF-8
+Pakiet driver-i810-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-mga
 Summary:	driver-mga package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-mga u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-mga u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-mga
 Provides:	XFree86-driver-mga = %{epoch}:%{version}-%{release}
@@ -637,13 +637,13 @@ Provides:	XFree86-driver-mga = %{epoch}:%{version}-%{release}
 driver-mga package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-mga -l pl
-Pakiet driver-mga u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-mga -l pl.UTF-8
+Pakiet driver-mga u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-mga-dri
 Summary:	driver-mga-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-mga-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-mga-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-matrox
 Provides:	XFree86-driver-mga-dri = %{epoch}:%{version}-%{release}
@@ -652,13 +652,13 @@ Provides:	XFree86-driver-mga-dri = %{epoch}:%{version}-%{release}
 driver-mga-dri package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-mga-dri -l pl
-Pakiet driver-mga-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-mga-dri -l pl.UTF-8
+Pakiet driver-mga-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-neomagic
 Summary:	driver-neomagic package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-neomagic u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-neomagic u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-neomagic
 Provides:	XFree86-driver-neomagic = %{epoch}:%{version}-%{release}
@@ -667,13 +667,13 @@ Provides:	XFree86-driver-neomagic = %{epoch}:%{version}-%{release}
 driver-neomagic package that allows easier monolithic X11->modular
 xorg upgrade.
 
-%description -n X11-driver-neomagic -l pl
-Pakiet driver-neomagic u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-neomagic -l pl.UTF-8
+Pakiet driver-neomagic u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-newport
 Summary:	driver-newport package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-newport u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-newport u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-newport
 Provides:	XFree86-driver-newport = %{epoch}:%{version}-%{release}
@@ -682,13 +682,13 @@ Provides:	XFree86-driver-newport = %{epoch}:%{version}-%{release}
 driver-newport package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-newport -l pl
-Pakiet driver-newport u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-newport -l pl.UTF-8
+Pakiet driver-newport u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-nsc
 Summary:	driver-nsc package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-nsc u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-nsc u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-nsc
 Provides:	XFree86-driver-nsc = %{epoch}:%{version}-%{release}
@@ -697,13 +697,13 @@ Provides:	XFree86-driver-nsc = %{epoch}:%{version}-%{release}
 driver-nsc package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-nsc -l pl
-Pakiet driver-nsc u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-nsc -l pl.UTF-8
+Pakiet driver-nsc u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-nv
 Summary:	driver-nv package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-nv u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-nv u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-nv
 Provides:	XFree86-driver-nv = %{epoch}:%{version}-%{release}
@@ -712,13 +712,13 @@ Provides:	XFree86-driver-nv = %{epoch}:%{version}-%{release}
 driver-nv package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-nv -l pl
-Pakiet driver-nv u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-nv -l pl.UTF-8
+Pakiet driver-nv u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-rendition
 Summary:	driver-rendition package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-rendition u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-rendition u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-rendition
 Provides:	XFree86-driver-rendition = %{epoch}:%{version}-%{release}
@@ -727,13 +727,13 @@ Provides:	XFree86-driver-rendition = %{epoch}:%{version}-%{release}
 driver-rendition package that allows easier monolithic X11->modular
 xorg upgrade.
 
-%description -n X11-driver-rendition -l pl
-Pakiet driver-rendition u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-rendition -l pl.UTF-8
+Pakiet driver-rendition u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-s3virge
 Summary:	driver-s3virge package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-s3virge u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-s3virge u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-s3virge
 Requires:	xorg-driver-video-s3virge
@@ -743,13 +743,13 @@ Provides:	XFree86-driver-s3virge = %{epoch}:%{version}-%{release}
 driver-s3virge package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-s3virge -l pl
-Pakiet driver-s3virge u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-s3virge -l pl.UTF-8
+Pakiet driver-s3virge u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-s3
 Summary:	driver-s3 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-s3 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-s3 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-s3
 Provides:	XFree86-driver-s3 = %{epoch}:%{version}-%{release}
@@ -758,13 +758,13 @@ Provides:	XFree86-driver-s3 = %{epoch}:%{version}-%{release}
 driver-s3 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-s3 -l pl
-Pakiet driver-s3 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-s3 -l pl.UTF-8
+Pakiet driver-s3 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-savage
 Summary:	driver-savage package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-savage u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-savage u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-savage
 Requires:	xorg-driver-video-savage
@@ -774,13 +774,13 @@ Provides:	XFree86-driver-savage = %{epoch}:%{version}-%{release}
 driver-savage package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-savage -l pl
-Pakiet driver-savage u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-savage -l pl.UTF-8
+Pakiet driver-savage u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-siliconmotion
 Summary:	driver-siliconmotion package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-siliconmotion u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-siliconmotion u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-siliconmotion
 Provides:	XFree86-driver-siliconmotion = %{epoch}:%{version}-%{release}
@@ -789,13 +789,13 @@ Provides:	XFree86-driver-siliconmotion = %{epoch}:%{version}-%{release}
 driver-siliconmotion package that allows easier monolithic
 X11->modular xorg upgrade.
 
-%description -n X11-driver-siliconmotion -l pl
-Pakiet driver-siliconmotion u≥atwiaj±cy przej∂cie z monolitycznego X11
+%description -n X11-driver-siliconmotion -l pl.UTF-8
+Pakiet driver-siliconmotion u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11
 na modularne xorg.
 
 %package -n X11-driver-sis
 Summary:	driver-sis package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-sis u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-sis u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-sis
 Provides:	XFree86-driver-sis = %{epoch}:%{version}-%{release}
@@ -804,13 +804,13 @@ Provides:	XFree86-driver-sis = %{epoch}:%{version}-%{release}
 driver-sis package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-sis -l pl
-Pakiet driver-sis u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-sis -l pl.UTF-8
+Pakiet driver-sis u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-sis-dri
 Summary:	driver-sis-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-sis-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-sis-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-sis
 Provides:	XFree86-driver-sis-dri = %{epoch}:%{version}-%{release}
@@ -819,13 +819,13 @@ Provides:	XFree86-driver-sis-dri = %{epoch}:%{version}-%{release}
 driver-sis-dri package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-sis-dri -l pl
-Pakiet driver-sis-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-sis-dri -l pl.UTF-8
+Pakiet driver-sis-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-sisusb
 Summary:	driver-sisusb package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-sisusb u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-sisusb u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-sisusb
 Provides:	XFree86-driver-sisusb = %{epoch}:%{version}-%{release}
@@ -834,13 +834,13 @@ Provides:	XFree86-driver-sisusb = %{epoch}:%{version}-%{release}
 driver-sisusb package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-sisusb -l pl
-Pakiet driver-sisusb u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-sisusb -l pl.UTF-8
+Pakiet driver-sisusb u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-sunbw2
 Summary:	driver-sunbw2 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-sunbw2 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-sunbw2 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-sunbw2
 Provides:	XFree86-driver-sunbw2 = %{epoch}:%{version}-%{release}
@@ -849,13 +849,13 @@ Provides:	XFree86-driver-sunbw2 = %{epoch}:%{version}-%{release}
 driver-sunbw2 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-sunbw2 -l pl
-Pakiet driver-sunbw2 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-sunbw2 -l pl.UTF-8
+Pakiet driver-sunbw2 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-suncg14
 Summary:	driver-suncg14 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-suncg14 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-suncg14 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-suncg14
 Provides:	XFree86-driver-suncg14 = %{epoch}:%{version}-%{release}
@@ -864,13 +864,13 @@ Provides:	XFree86-driver-suncg14 = %{epoch}:%{version}-%{release}
 driver-suncg14 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-suncg14 -l pl
-Pakiet driver-suncg14 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-suncg14 -l pl.UTF-8
+Pakiet driver-suncg14 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-suncg3
 Summary:	driver-suncg3 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-suncg3 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-suncg3 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-suncg3
 Provides:	XFree86-driver-suncg3 = %{epoch}:%{version}-%{release}
@@ -878,12 +878,12 @@ Provides:	XFree86-driver-suncg3 = %{epoch}:%{version}-%{release}
 %description -n X11-driver-suncg3
 driver-suncg3 package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-driver-suncg3 -l pl
-Pakiet driver-suncg3 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg.
+%description -n X11-driver-suncg3 -l pl.UTF-8
+Pakiet driver-suncg3 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg.
 
 %package -n X11-driver-suncg6
 Summary:	driver-suncg6 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-suncg6 u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-suncg6 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-suncg6
 Provides:	XFree86-driver-suncg6 = %{epoch}:%{version}-%{release}
@@ -892,13 +892,13 @@ Provides:	XFree86-driver-suncg6 = %{epoch}:%{version}-%{release}
 driver-suncg6 package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-suncg6 -l pl
-Pakiet driver-suncg6 u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-suncg6 -l pl.UTF-8
+Pakiet driver-suncg6 u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-sunffb
 Summary:	driver-sunffb package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-sunffb u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-sunffb u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-ffb
 Requires:	xorg-driver-video-sunffb
@@ -908,13 +908,13 @@ Provides:	XFree86-driver-sunffb = %{epoch}:%{version}-%{release}
 driver-sunffb package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-sunffb -l pl
-Pakiet driver-sunffb u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-sunffb -l pl.UTF-8
+Pakiet driver-sunffb u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-sunleo
 Summary:	driver-sunleo package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-sunleo u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-sunleo u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-sunleo
 Provides:	XFree86-driver-sunleo = %{epoch}:%{version}-%{release}
@@ -923,13 +923,13 @@ Provides:	XFree86-driver-sunleo = %{epoch}:%{version}-%{release}
 driver-sunleo package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-sunleo -l pl
-Pakiet driver-sunleo u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-sunleo -l pl.UTF-8
+Pakiet driver-sunleo u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-suntcx
 Summary:	driver-suntcx package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-suntcx u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-suntcx u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-suntcx
 Provides:	XFree86-driver-suntcx = %{epoch}:%{version}-%{release}
@@ -938,13 +938,13 @@ Provides:	XFree86-driver-suntcx = %{epoch}:%{version}-%{release}
 driver-suntcx package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-suntcx -l pl
-Pakiet driver-suntcx u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-suntcx -l pl.UTF-8
+Pakiet driver-suntcx u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-tdfx
 Summary:	driver-tdfx package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-tdfx u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-tdfx u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-tdfx
 Provides:	XFree86-driver-tdfx = %{epoch}:%{version}-%{release}
@@ -953,13 +953,13 @@ Provides:	XFree86-driver-tdfx = %{epoch}:%{version}-%{release}
 driver-tdfx package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-tdfx -l pl
-Pakiet driver-tdfx u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-tdfx -l pl.UTF-8
+Pakiet driver-tdfx u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-tdfx-dri
 Summary:	driver-tdfx-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-tdfx-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-tdfx-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-tdfx
 Provides:	XFree86-driver-tdfx-dri = %{epoch}:%{version}-%{release}
@@ -968,13 +968,13 @@ Provides:	XFree86-driver-tdfx-dri = %{epoch}:%{version}-%{release}
 driver-tdfx-dri package that allows easier monolithic X11->modular
 xorg upgrade.
 
-%description -n X11-driver-tdfx-dri -l pl
-Pakiet driver-tdfx-dri u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-tdfx-dri -l pl.UTF-8
+Pakiet driver-tdfx-dri u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-tga
 Summary:	driver-tga package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-tga u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-tga u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-tga
 Provides:	XFree86-driver-tga = %{epoch}:%{version}-%{release}
@@ -983,13 +983,13 @@ Provides:	XFree86-driver-tga = %{epoch}:%{version}-%{release}
 driver-tga package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-tga -l pl
-Pakiet driver-tga u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-tga -l pl.UTF-8
+Pakiet driver-tga u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-trident
 Summary:	driver-trident package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-trident u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-trident u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-trident
 Requires:	xorg-driver-video-trident
@@ -999,13 +999,13 @@ Provides:	XFree86-driver-trident = %{epoch}:%{version}-%{release}
 driver-trident package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-trident -l pl
-Pakiet driver-trident u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-trident -l pl.UTF-8
+Pakiet driver-trident u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-tseng
 Summary:	driver-tseng package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-tseng u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-tseng u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-tseng
 Provides:	XFree86-driver-tseng = %{epoch}:%{version}-%{release}
@@ -1014,13 +1014,13 @@ Provides:	XFree86-driver-tseng = %{epoch}:%{version}-%{release}
 driver-tseng package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-tseng -l pl
-Pakiet driver-tseng u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-tseng -l pl.UTF-8
+Pakiet driver-tseng u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-via
 Summary:	driver-via package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-via u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-via u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-dri-driver-via-unichrome
 Requires:	xorg-driver-video-via
@@ -1030,13 +1030,13 @@ Provides:	XFree86-driver-via = %{epoch}:%{version}-%{release}
 driver-via package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-via -l pl
-Pakiet driver-via u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-via -l pl.UTF-8
+Pakiet driver-via u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-vmware
 Summary:	driver-vmware package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet driver-vmware u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet driver-vmware u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-driver-video-vmware
 Provides:	XFree86-driver-vmware = %{epoch}:%{version}-%{release}
@@ -1045,13 +1045,13 @@ Provides:	XFree86-driver-vmware = %{epoch}:%{version}-%{release}
 driver-vmware package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-driver-vmware -l pl
-Pakiet driver-vmware u≥atwiaj±cy przej∂cie z monolitycznego X11 na
+%description -n X11-driver-vmware -l pl.UTF-8
+Pakiet driver-vmware u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-libs
 Summary:	libs package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet libs u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet libs u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-bitmap
 Requires:	xorg-app-xditview
@@ -1072,13 +1072,13 @@ Obsoletes:	XFree86-common
 %description -n X11-libs
 libs package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-libs -l pl
-Pakiet libs u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-libs -l pl.UTF-8
+Pakiet libs u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-modules
 Summary:	modules package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet modules u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet modules u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-xkbcomp
 Requires:	xorg-driver-input-keyboard
@@ -1093,13 +1093,13 @@ Provides:	XFree86-modules = %{epoch}:%{version}-%{release}
 modules package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-modules -l pl
-Pakiet modules u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-modules -l pl.UTF-8
+Pakiet modules u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-setup
 Summary:	setup package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet setup u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet setup u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-xserver-server
 Provides:	XFree86-setup = %{epoch}:%{version}-%{release}
@@ -1107,13 +1107,13 @@ Provides:	XFree86-setup = %{epoch}:%{version}-%{release}
 %description -n X11-setup
 setup package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-setup -l pl
-Pakiet setup u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-setup -l pl.UTF-8
+Pakiet setup u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-static
 Summary:	static package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet static u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet static u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-lib-libFS-static
 Requires:	xorg-lib-libICE-static
@@ -1161,13 +1161,13 @@ Obsoletes:	XFree86-OpenGL-static
 static package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-static -l pl
-Pakiet static u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-static -l pl.UTF-8
+Pakiet static u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-tools
 Summary:	tools package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet tools u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet tools u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-beforelight
 Requires:	xorg-app-ico
@@ -1216,13 +1216,13 @@ Obsoletes:	XFree86-DPS-static
 %description -n X11-tools
 tools package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-tools -l pl
-Pakiet tools u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-tools -l pl.UTF-8
+Pakiet tools u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-imake
 Summary:	imake package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet imake u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet imake u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-util-gccmakedep
 Requires:	xorg-util-imake
@@ -1231,13 +1231,13 @@ Provides:	XFree86-imake = %{epoch}:%{version}-%{release}
 %description -n X11-imake
 imake package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-imake -l pl
-Pakiet imake u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-imake -l pl.UTF-8
+Pakiet imake u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-sessreg
 Summary:	sessreg package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet sessreg u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet sessreg u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-sessreg
 Provides:	XFree86-sessreg = %{epoch}:%{version}-%{release}
@@ -1246,13 +1246,13 @@ Provides:	XFree86-sessreg = %{epoch}:%{version}-%{release}
 sessreg package that allows easier monolithic X11->modular xorg
 upgrade.
 
-%description -n X11-sessreg -l pl
-Pakiet sessreg u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-sessreg -l pl.UTF-8
+Pakiet sessreg u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-twm
 Summary:	twm package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet twm u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet twm u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-twm
 Provides:	XFree86-twm = %{epoch}:%{version}-%{release}
@@ -1260,13 +1260,13 @@ Provides:	XFree86-twm = %{epoch}:%{version}-%{release}
 %description -n X11-twm
 twm package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-twm -l pl
-Pakiet twm u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-twm -l pl.UTF-8
+Pakiet twm u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-xauth
 Summary:	xauth package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet xauth u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet xauth u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-xauth
 Provides:	XFree86-xauth = %{epoch}:%{version}-%{release}
@@ -1274,13 +1274,13 @@ Provides:	XFree86-xauth = %{epoch}:%{version}-%{release}
 %description -n X11-xauth
 xauth package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-xauth -l pl
-Pakiet xauth u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-xauth -l pl.UTF-8
+Pakiet xauth u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-xdm
 Summary:	xdm package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet xdm u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet xdm u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-xdm
 Provides:	XFree86-xdm = %{epoch}:%{version}-%{release}
@@ -1288,13 +1288,13 @@ Provides:	XFree86-xdm = %{epoch}:%{version}-%{release}
 %description -n X11-xdm
 xdm package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-xdm -l pl
-Pakiet xdm u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-xdm -l pl.UTF-8
+Pakiet xdm u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-xfs
 Summary:	xfs package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet xfs u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet xfs u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-xfs
 Provides:	XFree86-xfs = %{epoch}:%{version}-%{release}
@@ -1302,13 +1302,13 @@ Provides:	XFree86-xfs = %{epoch}:%{version}-%{release}
 %description -n X11-xfs
 xfs package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-xfs -l pl
-Pakiet xfs u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-xfs -l pl.UTF-8
+Pakiet xfs u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-fonts
 Summary:	fonts package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet fonts u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet fonts u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-font-encodings
 Requires:	xorg-font-font-adobe-utopia-type1
@@ -1334,13 +1334,13 @@ Provides:	XFree86-fonts = %{epoch}:%{version}-%{release}
 %description -n X11-fonts
 fonts package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-fonts -l pl
-Pakiet fonts u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne
+%description -n X11-fonts -l pl.UTF-8
+Pakiet fonts u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-fonts-base
 Summary:	fonts-base package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl):	Pakiet fonts-base u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg
+Summary(pl.UTF-8):   Pakiet fonts-base u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-font-font-cursor-misc
 Requires:	xorg-font-font-misc-misc-base
@@ -1349,8 +1349,8 @@ Provides:	XFree86-fonts-base = %{epoch}:%{version}-%{release}
 %description -n X11-fonts-base
 fonts-base package that allows easier monolithic X11->modular xorg upgrade.
 
-%description -n X11-fonts-base -l pl
-Pakiet fonts-base u≥atwiaj±cy przej∂cie z monolitycznego X11 na modularne xorg.
+%description -n X11-fonts-base -l pl.UTF-8
+Pakiet fonts-base u≈ÇatwiajƒÖcy przej≈õcie z monolitycznego X11 na modularne xorg.
 
 %clean
 rm -rf $RPM_BUILD_ROOT
