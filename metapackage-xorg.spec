@@ -1255,7 +1255,9 @@ Summary:	twm package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet twm ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-twm
-Provides:	XFree86-twm = %{epoch}:%{version}-%{release}
+Provides:	twm = %{epoch}:%{version}-%{release}
+Obsoletes:	XFree86-twm
+Obsoletes:	twm
 
 %description -n X11-twm
 twm package that allows easier monolithic X11->modular xorg upgrade.
