@@ -104,6 +104,7 @@ Summary(pl.UTF-8):	Pakiet OpenGL-core ułatwiający przejście z monolitycznego 
 Group:		X11
 Requires:	xorg-xserver-server
 Provides:	XFree86-OpenGL-core = %{epoch}:%{version}-%{release}
+Obsoletes:	XFree86-OpenGL-core
 
 %description -n X11-OpenGL-core
 OpenGL-core package that allows easier monolithic X11->modular xorg
@@ -119,6 +120,7 @@ Summary(pl.UTF-8):	Pakiet OpenGL-libGL ułatwiający przejście z monolitycznego
 Group:		X11
 Requires:	Mesa-libGL
 Provides:	XFree86-OpenGL-libGL = %{epoch}:%{version}-%{release}
+Obsoletes:	XFree86-OpenGL-libGL
 
 %description -n X11-OpenGL-libGL
 OpenGL-libGL package that allows easier monolithic X11->modular xorg
@@ -149,6 +151,7 @@ Summary:	OpenGL-devel-base package that allows easier monolithic X11->modular xo
 Summary(pl.UTF-8):	Pakiet OpenGL-devel-base ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Provides:	XFree86-OpenGL-devel-base = %{epoch}:%{version}-%{release}
+Obsoletes:	XFree86-OpenGL-devel-base
 
 %description -n X11-OpenGL-devel-base
 OpenGL-devel-base package that allows easier monolithic X11->modular
@@ -164,6 +167,7 @@ Summary(pl.UTF-8):	Pakiet OpenGL-devel ułatwiający przejście z monolitycznego
 Group:		X11
 Requires:	Mesa-libGL-devel
 Provides:	XFree86-OpenGL-devel = %{epoch}:%{version}-%{release}
+Obsoletes:	XFree86-OpenGL-devel
 
 %description -n X11-OpenGL-devel
 OpenGL-devel package that allows easier monolithic X11->modular xorg
@@ -179,6 +183,7 @@ Summary(pl.UTF-8):	Pakiet OpenGL-static ułatwiający przejście z monolityczneg
 Group:		X11
 Requires:	Mesa-libGL-static
 Provides:	XFree86-OpenGL-static = %{epoch}:%{version}-%{release}
+Obsoletes:	XFree86-OpenGL-static
 
 %description -n X11-OpenGL-static
 OpenGL-static package that allows easier monolithic X11->modular xorg
@@ -309,11 +314,7 @@ Requires:	xorg-proto-xproxymanagementprotocol-devel
 Provides:	XFree86-devel = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-devel
-Obsoletes:	X11-OpenGL-devel
-Obsoletes:	X11-OpenGL-devel-base
 Obsoletes:	XFree86-DPS-devel
-Obsoletes:	XFree86-OpenGL-devel
-Obsoletes:	XFree86-OpenGL-devel-base
 
 %description -n X11-devel
 devel package that allows easier monolithic X11->modular xorg upgrade.
@@ -1061,12 +1062,8 @@ Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
 # Rest of libs deps will be fetched on per so-name rule.
 # Common obsoletes:
 Obsoletes:	X11-DPS
-Obsoletes:	X11-OpenGL-core
-Obsoletes:	X11-OpenGL-libGL
 Obsoletes:	X11-common
 Obsoletes:	XFree86-DPS
-Obsoletes:	XFree86-OpenGL-core
-Obsoletes:	XFree86-OpenGL-libGL
 Obsoletes:	XFree86-common
 
 %description -n X11-libs
@@ -1153,9 +1150,7 @@ Requires:	xorg-lib-libxkbui-static
 Provides:	XFree86-static = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-static
-Obsoletes:	X11-OpenGL-static
 Obsoletes:	XFree86-DPS-static
-Obsoletes:	XFree86-OpenGL-static
 
 %description -n X11-static
 static package that allows easier monolithic X11->modular xorg
@@ -1205,13 +1200,6 @@ Requires:	xorg-app-xprop
 Requires:	xorg-app-xtrap
 Requires:	xorg-app-xwininfo
 Provides:	XFree86-tools = %{epoch}:%{version}-%{release}
-# common obsoletes
-Obsoletes:	X11-DPS
-Obsoletes:	X11-DPS-devel
-Obsoletes:	X11-DPS-static
-Obsoletes:	XFree86-DPS
-Obsoletes:	XFree86-DPS-devel
-Obsoletes:	XFree86-DPS-static
 
 %description -n X11-tools
 tools package that allows easier monolithic X11->modular xorg upgrade.
