@@ -1083,7 +1083,6 @@ Requires:	xorg-driver-input-keyboard
 Requires:	xorg-driver-video-v4l
 Requires:	xorg-driver-video-vesa
 Requires:	xorg-driver-video-vga
-Requires:	xorg-xserver-Xprt
 Provides:	XFree86-modules = %{epoch}:%{version}-%{release}
 # not all deps here but we don't want to bring all modules on upgrade
 
