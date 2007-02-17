@@ -1061,6 +1061,7 @@ Requires:	xorg-data-xbitmaps
 Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
 # Rest of libs deps will be fetched on per so-name rule.
 # Common obsoletes:
+Provides:	X11-DPS
 Obsoletes:	X11-DPS
 Obsoletes:	X11-common
 Obsoletes:	XFree86-DPS
@@ -1334,7 +1335,6 @@ Summary(pl.UTF-8):	Pakiet fonts-base ułatwiający przejście z monolitycznego X
 Group:		X11
 Requires:	xorg-font-font-cursor-misc
 Requires:	xorg-font-font-misc-misc-base
-Provides:	XFree86-fonts-base = %{epoch}:%{version}-%{release}
 
 %description -n X11-fonts-base
 fonts-base package that allows easier monolithic X11->modular xorg upgrade.
