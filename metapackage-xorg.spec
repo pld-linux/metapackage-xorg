@@ -1329,10 +1329,26 @@ fonts package that allows easier monolithic X11->modular xorg upgrade.
 Pakiet fonts ułatwiający przejście z monolitycznego X11 na modularne
 xorg.
 
+%package -n X11-fonts-utils
+Summary:	fonts-utils package that allows easier monolithic X11->modular xorg upgrade.
+Summary(pl.UTF-8):	Pakiet fonts-utils ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Group:		X11
+Requires:	xorg-font-font-util
+Provides:	XFree86-fonts-utils = %{version}-%{release}
+Obsoletes:	XFree86-fonts-utils
+
+%description -n X11-fonts-utils
+fonts-utils package that allows easier monolithic X11->modular xorg
+upgrade.
+
+%description -n X11-fonts-utils -l pl.UTF-8
+Pakiet fonts-utils ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
+
 %package -n X11-fonts-base
 Summary:	fonts-base package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-base ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
+Group:		Fonts
 Requires:	xorg-font-font-cursor-misc
 Requires:	xorg-font-font-misc-misc-base
 
@@ -1341,6 +1357,67 @@ fonts-base package that allows easier monolithic X11->modular xorg upgrade.
 
 %description -n X11-fonts-base -l pl.UTF-8
 Pakiet fonts-base ułatwiający przejście z monolitycznego X11 na modularne xorg.
+
+%package -n X11-fonts-JISX0201.1976-0
+Summary:	fonts-JISX0201.1976-0 package that allows easier monolithic X11->modular xorg upgrade.
+Summary(pl.UTF-8):	Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Group:		Fonts
+Requires:	xorg-font-font-jis-misc
+Provides:	XFree86-fonts-JISX0201.1976-0 = %{version}-%{release}
+Obsoletes:	XFree86-fonts-JISX0201.1976-0
+
+%description -n X11-fonts-JISX0201.1976-0
+fonts-JISX0201.1976-0 package that allows easier monolithic X11->modular
+xorg upgrade.
+
+%description -n X11-fonts-JISX0201.1976-0 -l pl.UTF-8
+Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monolitycznego X11
+na modularne xorg.
+
+%package -n X11-fonts-KOI8-R
+Summary:	fonts-KOI8-R package that allows easier monolithic X11->modular xorg upgrade.
+Summary(pl.UTF-8):	Pakiet fonts-KOI8-R ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Group:		Fonts
+Requires:	xorg-font-font-cronyx-cyrillic
+Requires:	xorg-font-font-misc-cyrillic
+Requires:	xorg-font-font-screen-cyrillic
+Requires:	xorg-font-font-winitzki-cyrillic
+Provides:	XFree86-fonts-KOI8-R = %{version}-%{release}
+Obsoletes:	XFree86-fonts-KOI8-R
+
+%description -n X11-fonts-KOI8-R
+fonts-KOI8-R package that allows easier monolithic X11->modular xorg upgrade.
+
+%description -n X11-fonts-KOI8-R -l pl.UTF-8
+Pakiet fonts-KOI8-R ułatwiający przejście z monolitycznego X11 na modularne xorg.
+
+%package -n X11-fonts-Ethiopic
+Summary:	fonts-Ethiopic package that allows easier monolithic X11->modular xorg upgrade.
+Summary(pl.UTF-8):	Pakiet fonts-Ethiopic ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Group:		Fonts
+Requires:	xorg-font-font-misc-ethiopic
+Provides:	XFree86-fonts-Ethiopic = %{version}-%{release}
+Obsoletes:	XFree86-fonts-Ethiopic
+
+%description -n X11-fonts-Ethiopic
+fonts-Ethiopic package that allows easier monolithic X11->modular xorg upgrade.
+
+%description -n X11-fonts-Ethiopic -l pl.UTF-8
+Pakiet fonts-Ethiopic ułatwiający przejście z monolitycznego X11 na modularne xorg.
+
+%package -n X11-fonts-Syriac
+Summary:	fonts-Syriac package that allows easier monolithic X11->modular xorg upgrade.
+Summary(pl.UTF-8):	Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Group:		Fonts
+Requires:	xorg-font-font-misc-meltho
+Provides:	XFree86-fonts-Syriac = %{version}-%{release}
+Obsoletes:	XFree86-fonts-Syriac
+
+%description -n X11-fonts-Syriac
+fonts-Syriac package that allows easier monolithic X11->modular xorg upgrade.
+
+%description -n X11-fonts-Syriac -l pl.UTF-8
+Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na modularne xorg.
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -1495,5 +1572,15 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-fonts
 %defattr(644,root,root,755)
+%files -n X11-fonts-utils
+%defattr(644,root,root,755)
 %files -n X11-fonts-base
+%defattr(644,root,root,755)
+%files -n X11-fonts-JISX0201.1976-0
+%defattr(644,root,root,755)
+%files -n X11-fonts-KOI8-R
+%defattr(644,root,root,755)
+%files -n X11-fonts-Ethiopic
+%defattr(644,root,root,755)
+%files -n X11-fonts-Syriac
 %defattr(644,root,root,755)
