@@ -1080,6 +1080,7 @@ Summary(pl.UTF-8):	Pakiet modules ułatwiający przejście z monolitycznego X11 
 Group:		X11
 Requires:	xorg-app-xkbcomp
 Requires:	xorg-driver-input-keyboard
+Requires:	xorg-driver-input-mouse
 Requires:	xorg-driver-video-v4l
 Requires:	xorg-driver-video-vesa
 Requires:	xorg-driver-video-vga
