@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	0.3
+Release:	0.4
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1288,7 +1288,9 @@ Summary:	xfs package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet xfs ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-app-xfs
-Provides:	XFree86-xfs = %{epoch}:%{version}-%{release}
+Provides:	xfs = %{epoch}:%{version}-%{release}
+Obsoletes:	XFree86-xfs
+Obsoletes:	xfs
 
 %description -n X11-xfs
 xfs package that allows easier monolithic X11->modular xorg upgrade.
