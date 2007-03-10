@@ -1789,6 +1789,8 @@ fonts-Syriac package that allows easier monolithic X11->modular xorg upgrade.
 %description -n X11-fonts-Syriac -l pl.UTF-8
 Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na modularne xorg.
 
+%prep
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
