@@ -6,14 +6,14 @@ Release:	0.5
 Epoch:		1
 License:	GPL
 Group:		X11
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Metapackage that allows easier monolithic X11->modular xorg upgrade.
 
 %description -l pl.UTF-8
-Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Metapakiet ułatwiający przejście z monolitycznego X11 na modularne
+xorg.
 
 %package -n X11
 Summary:	X11 package that allows easier monolithic X11->modular xorg upgrade
@@ -1430,8 +1430,8 @@ Pakiet fonts ułatwiający przejście z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-fonts-utils
-Summary:	fonts-utils package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-utils ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-utils package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-utils ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	xorg-font-font-util
 Provides:	XFree86-fonts-utils = %{epoch}:%{version}-%{release}
@@ -1453,210 +1453,240 @@ Requires:	xorg-font-font-cursor-misc
 Requires:	xorg-font-font-misc-misc-base
 
 %description -n X11-fonts-base
-fonts-base package that allows easier monolithic X11->modular xorg upgrade.
+fonts-base package that allows easier monolithic X11->modular xorg
+upgrade.
 
 %description -n X11-fonts-base -l pl.UTF-8
-Pakiet fonts-base ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-base ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-1
-Summary:	fonts-ISO8859-1 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-1 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-1 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-1 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-1
 Provides:	XFree86-fonts-ISO8859-1 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-1
 
 %description -n X11-fonts-ISO8859-1
-fonts-ISO8859-1 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-1 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-1 -l pl.UTF-8
-Pakiet fonts-ISO8859-1 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-1 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-2
-Summary:	fonts-ISO8859-2 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-2 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-2 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-2 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-2
 Provides:	XFree86-fonts-ISO8859-2 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-2
 
 %description -n X11-fonts-ISO8859-2
-fonts-ISO8859-2 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-2 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-2 -l pl.UTF-8
-Pakiet fonts-ISO8859-2 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-2 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-3
-Summary:	fonts-ISO8859-3 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-3 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-3 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-3 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-3
 Provides:	XFree86-fonts-ISO8859-3 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-3
 
 %description -n X11-fonts-ISO8859-3
-fonts-ISO8859-3 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-3 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-3 -l pl.UTF-8
-Pakiet fonts-ISO8859-3 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-3 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-4
-Summary:	fonts-ISO8859-4 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-4 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-4 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-4 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-4
 Provides:	XFree86-fonts-ISO8859-4 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-4
 
 %description -n X11-fonts-ISO8859-4
-fonts-ISO8859-4 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-4 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-4 -l pl.UTF-8
-Pakiet fonts-ISO8859-4 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-4 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-5
-Summary:	fonts-ISO8859-5 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-5 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-5 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-5 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-5
 Provides:	XFree86-fonts-ISO8859-5 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-5
 
 %description -n X11-fonts-ISO8859-5
-fonts-ISO8859-5 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-5 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-5 -l pl.UTF-8
-Pakiet fonts-ISO8859-5 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-5 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-7
-Summary:	fonts-ISO8859-7 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-7 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-7 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-7 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-7
 Provides:	XFree86-fonts-ISO8859-7 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-7
 
 %description -n X11-fonts-ISO8859-7
-fonts-ISO8859-7 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-7 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-7 -l pl.UTF-8
-Pakiet fonts-ISO8859-7 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-7 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-8
-Summary:	fonts-ISO8859-8 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-8 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-8 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-8 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-8
 Provides:	XFree86-fonts-ISO8859-8 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-8
 
 %description -n X11-fonts-ISO8859-8
-fonts-ISO8859-8 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-8 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-8 -l pl.UTF-8
-Pakiet fonts-ISO8859-8 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-8 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-9
-Summary:	fonts-ISO8859-9 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-9 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-9 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-9 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-9
 Provides:	XFree86-fonts-ISO8859-9 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-9
 
 %description -n X11-fonts-ISO8859-9
-fonts-ISO8859-9 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-9 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-9 -l pl.UTF-8
-Pakiet fonts-ISO8859-9 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-9 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-10
-Summary:	fonts-ISO8859-10 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-10 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-10 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-10 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-10
 Provides:	XFree86-fonts-ISO8859-10 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-10
 
 %description -n X11-fonts-ISO8859-10
-fonts-ISO8859-10 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-10 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-10 -l pl.UTF-8
-Pakiet fonts-ISO8859-10 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-10 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-11
-Summary:	fonts-ISO8859-11 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-11 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-11 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-11 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-11
 Provides:	XFree86-fonts-ISO8859-11 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-11
 
 %description -n X11-fonts-ISO8859-11
-fonts-ISO8859-11 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-11 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-11 -l pl.UTF-8
-Pakiet fonts-ISO8859-11 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-11 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-13
-Summary:	fonts-ISO8859-13 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-13 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-13 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-13 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-13
 Provides:	XFree86-fonts-ISO8859-13 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-13
 
 %description -n X11-fonts-ISO8859-13
-fonts-ISO8859-13 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-13 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-13 -l pl.UTF-8
-Pakiet fonts-ISO8859-13 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-13 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-14
-Summary:	fonts-ISO8859-14 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-14 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-14 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-14 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-14
 Provides:	XFree86-fonts-ISO8859-14 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-14
 
 %description -n X11-fonts-ISO8859-14
-fonts-ISO8859-14 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-14 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-14 -l pl.UTF-8
-Pakiet fonts-ISO8859-14 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-14 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-15
-Summary:	fonts-ISO8859-15 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-15 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-15 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-15 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-15
 Provides:	XFree86-fonts-ISO8859-15 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-15
 
 %description -n X11-fonts-ISO8859-15
-fonts-ISO8859-15 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-15 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-15 -l pl.UTF-8
-Pakiet fonts-ISO8859-15 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-15 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-ISO8859-16
-Summary:	fonts-ISO8859-16 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-ISO8859-16 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-ISO8859-16 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-ISO8859-16 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-16
 Provides:	XFree86-fonts-ISO8859-16 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-16
 
 %description -n X11-fonts-ISO8859-16
-fonts-ISO8859-16 package that allows easier monolithic X11->modular xorg upgrade.
+fonts-ISO8859-16 package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-fonts-ISO8859-16 -l pl.UTF-8
-Pakiet fonts-ISO8859-16 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-ISO8859-16 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-75dpi
-Summary:	fonts-75dpi package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-75dpi ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-75dpi package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-75dpi ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-adobe-75dpi
 Requires:	xorg-font-font-adobe-utopia-75dpi
@@ -1686,14 +1716,16 @@ Obsoletes:	XFree86-fonts-75dpi-ISO8859-14
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-15
 
 %description -n X11-fonts-75dpi
-fonts-75dpi package that allows easier monolithic X11->modular xorg upgrade.
+fonts-75dpi package that allows easier monolithic X11->modular xorg
+upgrade.
 
 %description -n X11-fonts-75dpi -l pl.UTF-8
-Pakiet fonts-75dpi ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-75dpi ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-100dpi
-Summary:	fonts-100dpi package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-100dpi ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-100dpi package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-100dpi ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-adobe-100dpi
 Requires:	xorg-font-font-adobe-utopia-100dpi
@@ -1723,30 +1755,32 @@ Obsoletes:	XFree86-fonts-100dpi-ISO8859-14
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-15
 
 %description -n X11-fonts-100dpi
-fonts-100dpi package that allows easier monolithic X11->modular xorg upgrade.
+fonts-100dpi package that allows easier monolithic X11->modular xorg
+upgrade.
 
 %description -n X11-fonts-100dpi -l pl.UTF-8
-Pakiet fonts-100dpi ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-100dpi ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-JISX0201.1976-0
-Summary:	fonts-JISX0201.1976-0 package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-JISX0201.1976-0 package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-jis-misc
 Provides:	XFree86-fonts-JISX0201.1976-0 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-JISX0201.1976-0
 
 %description -n X11-fonts-JISX0201.1976-0
-fonts-JISX0201.1976-0 package that allows easier monolithic X11->modular
-xorg upgrade.
+fonts-JISX0201.1976-0 package that allows easier monolithic
+X11->modular xorg upgrade.
 
 %description -n X11-fonts-JISX0201.1976-0 -l pl.UTF-8
-Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monolitycznego X11
-na modularne xorg.
+Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monolitycznego
+X11 na modularne xorg.
 
 %package -n X11-fonts-KOI8-R
-Summary:	fonts-KOI8-R package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-KOI8-R ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-KOI8-R package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-KOI8-R ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-cronyx-cyrillic
 Requires:	xorg-font-font-misc-cyrillic
@@ -1756,38 +1790,44 @@ Provides:	XFree86-fonts-KOI8-R = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-KOI8-R
 
 %description -n X11-fonts-KOI8-R
-fonts-KOI8-R package that allows easier monolithic X11->modular xorg upgrade.
+fonts-KOI8-R package that allows easier monolithic X11->modular xorg
+upgrade.
 
 %description -n X11-fonts-KOI8-R -l pl.UTF-8
-Pakiet fonts-KOI8-R ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-KOI8-R ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-Ethiopic
-Summary:	fonts-Ethiopic package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-Ethiopic ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-Ethiopic package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-Ethiopic ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-ethiopic
 Provides:	XFree86-fonts-Ethiopic = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-Ethiopic
 
 %description -n X11-fonts-Ethiopic
-fonts-Ethiopic package that allows easier monolithic X11->modular xorg upgrade.
+fonts-Ethiopic package that allows easier monolithic X11->modular xorg
+upgrade.
 
 %description -n X11-fonts-Ethiopic -l pl.UTF-8
-Pakiet fonts-Ethiopic ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-Ethiopic ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-fonts-Syriac
-Summary:	fonts-Syriac package that allows easier monolithic X11->modular xorg upgrade.
-Summary(pl.UTF-8):	Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Summary:	fonts-Syriac package that allows easier monolithic X11->modular xorg upgrade
+Summary(pl.UTF-8):	Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
 Requires:	xorg-font-font-misc-meltho
 Provides:	XFree86-fonts-Syriac = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-Syriac
 
 %description -n X11-fonts-Syriac
-fonts-Syriac package that allows easier monolithic X11->modular xorg upgrade.
+fonts-Syriac package that allows easier monolithic X11->modular xorg
+upgrade.
 
 %description -n X11-fonts-Syriac -l pl.UTF-8
-Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %prep
 
