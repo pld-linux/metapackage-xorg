@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	0.5
+Release:	0.6
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -553,7 +553,7 @@ modularne xorg.
 Summary:	driver-glint-dri package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-glint-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-dri-driver-glint
+#Requires:	Mesa-dri-driver-glint
 Provides:	XFree86-driver-glint-dri = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-glint-dri
