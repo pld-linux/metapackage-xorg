@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1836,8 +1836,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n X11
 %defattr(644,root,root,755)
-%files -n X11-Xprint
-%defattr(644,root,root,755)
+#%files -n X11-Xprint
+#%defattr(644,root,root,755)
 %files -n X11-OpenGL-core
 %defattr(644,root,root,755)
 %files -n X11-OpenGL-libGL
@@ -1852,8 +1852,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-Xnest
 %defattr(644,root,root,755)
-%files -n X11-Xprt
-%defattr(644,root,root,755)
+#%files -n X11-Xprt
+#%defattr(644,root,root,755)
 %files -n X11-Xserver
 %defattr(644,root,root,755)
 %files -n X11-Xvfb
