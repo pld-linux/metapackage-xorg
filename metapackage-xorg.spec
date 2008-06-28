@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -81,21 +81,6 @@ X11 package that allows easier monolithic X11->modular xorg upgrade.
 
 %description -n X11 -l pl.UTF-8
 Pakiet X11 ułatwiający przejście z monolitycznego X11 na modularne
-xorg.
-
-%package -n X11-Xprint
-Summary:	Xprint package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet Xprint ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-xserver-Xprt
-Provides:	XFree86-Xprint = %{epoch}:%{version}-%{release}
-
-%description -n X11-Xprint
-Xprint package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-Xprint -l pl.UTF-8
-Pakiet Xprint ułatwiający przejście z monolitycznego X11 na modularne
 xorg.
 
 %package -n X11-OpenGL-core
@@ -205,19 +190,6 @@ Xnest package that allows easier monolithic X11->modular xorg upgrade.
 
 %description -n X11-Xnest -l pl.UTF-8
 Pakiet Xnest ułatwiający przejście z monolitycznego X11 na modularne xorg.
-
-%package -n X11-Xprt
-Summary:	Xprt package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet Xprt ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-xserver-Xprt
-Provides:	XFree86-Xprt = %{epoch}:%{version}-%{release}
-
-%description -n X11-Xprt
-Xprt package that allows easier monolithic X11->modular xorg upgrade.
-
-%description -n X11-Xprt -l pl.UTF-8
-Pakiet Xprt ułatwiający przejście z monolitycznego X11 na modularne xorg.
 
 %package -n X11-Xserver
 Summary:	Xserver package that allows easier monolithic X11->modular xorg upgrade
@@ -1164,6 +1136,8 @@ Obsoletes:	X11-DPS
 Obsoletes:	X11-common
 Obsoletes:	XFree86-DPS
 Obsoletes:	XFree86-common
+Obsoletes:	X11-Xprint
+Obsoletes:	X11-Xprt
 
 %description -n X11-libs
 libs package that allows easier monolithic X11->modular xorg upgrade.
