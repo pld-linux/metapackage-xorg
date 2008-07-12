@@ -2,11 +2,14 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	3
+Release:	4
 Epoch:		1
 License:	GPL
 Group:		X11
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# don't create -debuginfo package
+%define		_enable_debug_packages	0
 
 %description
 Metapackage that allows easier monolithic X11->modular xorg upgrade.
