@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	4
+Release:	5
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -448,21 +448,6 @@ upgrade.
 
 %description -n X11-driver-cirrus -l pl.UTF-8
 Pakiet driver-cirrus ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-cyrix
-Summary:	driver-cyrix package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-cyrix ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-driver-video-cyrix
-Provides:	XFree86-driver-cyrix = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-cyrix
-driver-cyrix package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-cyrix -l pl.UTF-8
-Pakiet driver-cyrix ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-fbdev
@@ -1090,22 +1075,6 @@ upgrade.
 
 %description -n X11-driver-tseng -l pl.UTF-8
 Pakiet driver-tseng ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-via
-Summary:	driver-via package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-via ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	Mesa-dri-driver-via-unichrome
-Requires:	xorg-driver-video-via
-Provides:	XFree86-driver-via = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-via
-driver-via package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-via -l pl.UTF-8
-Pakiet driver-via ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-vmware
@@ -1857,8 +1826,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-cirrus
 %defattr(644,root,root,755)
-%files -n X11-driver-cyrix
-%defattr(644,root,root,755)
 %files -n X11-driver-fbdev
 %defattr(644,root,root,755)
 %files -n X11-driver-firegl
@@ -1946,8 +1913,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -n X11-driver-trident
 %defattr(644,root,root,755)
 %files -n X11-driver-tseng
-%defattr(644,root,root,755)
-%files -n X11-driver-via
 %defattr(644,root,root,755)
 %files -n X11-driver-vmware
 %defattr(644,root,root,755)
