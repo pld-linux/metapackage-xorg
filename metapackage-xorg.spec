@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	5
+Release:	6
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1237,7 +1237,6 @@ Requires:	xorg-app-xman
 Requires:	xorg-app-xmessage
 Requires:	xorg-app-xmh
 Requires:	xorg-app-xmore
-Requires:	xorg-app-xphelloworld
 Requires:	xorg-app-xplsprinters
 Requires:	xorg-app-xpr
 Requires:	xorg-app-xprehashprinterlist
