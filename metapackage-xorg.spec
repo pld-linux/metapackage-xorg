@@ -192,7 +192,8 @@ Provides:	XFree86-Xnest = %{epoch}:%{version}-%{release}
 Xnest package that allows easier monolithic X11->modular xorg upgrade.
 
 %description -n X11-Xnest -l pl.UTF-8
-Pakiet Xnest ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet Xnest ułatwiający przejście z monolitycznego X11 na modularne
+xorg.
 
 %package -n X11-Xserver
 Summary:	Xserver package that allows easier monolithic X11->modular xorg upgrade
@@ -415,10 +416,12 @@ Requires:	Mesa-dri-driver-ati-radeon-R300
 Provides:	XFree86-driver-radeon-dri = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-radeon-dri
-driver-radeon-dri package that allows easier monolithic X11->modular xorg upgrade.
+driver-radeon-dri package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-driver-radeon-dri -l pl.UTF-8
-Pakiet driver-radeon-dri ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet driver-radeon-dri ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-driver-chips
 Summary:	driver-chips package that allows easier monolithic X11->modular xorg upgrade
@@ -712,12 +715,12 @@ Group:		X11
 Requires:	xorg-driver-video-nvidia-devel
 
 %description -n X11-driver-nvidia-devel
-driver-nvidia-devel package that allows easier monolithic X11->modular xorg
-upgrade.
+driver-nvidia-devel package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-driver-nvidia-devel -l pl.UTF-8
-Pakiet driver-nvidia-devel ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
+Pakiet driver-nvidia-devel ułatwiający przejście z monolitycznego X11
+na modularne xorg.
 
 %package -n X11-driver-nvidia-progs
 Summary:	driver-nvidia-progs package that allows easier monolithic X11->modular xorg upgrade
@@ -726,12 +729,12 @@ Group:		X11
 Requires:	xorg-driver-video-nvidia-progs
 
 %description -n X11-driver-nvidia-progs
-driver-nvidia-progs package that allows easier monolithic X11->modular xorg
-upgrade.
+driver-nvidia-progs package that allows easier monolithic X11->modular
+xorg upgrade.
 
 %description -n X11-driver-nvidia-progs -l pl.UTF-8
-Pakiet driver-nvidia-progs ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
+Pakiet driver-nvidia-progs ułatwiający przejście z monolitycznego X11
+na modularne xorg.
 
 %package -n X11-driver-nvidia-legacy
 Summary:	driver-nvidia-legacy package that allows easier monolithic X11->modular xorg upgrade
@@ -740,12 +743,12 @@ Group:		X11
 Requires:	xorg-driver-video-nvidia-legacy
 
 %description -n X11-driver-nvidia-legacy
-driver-nvidia-legacy package that allows easier monolithic X11->modular xorg
-upgrade.
+driver-nvidia-legacy package that allows easier monolithic
+X11->modular xorg upgrade.
 
 %description -n X11-driver-nvidia-legacy -l pl.UTF-8
-Pakiet driver-nvidia-legacy ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
+Pakiet driver-nvidia-legacy ułatwiający przejście z monolitycznego X11
+na modularne xorg.
 
 %package -n X11-driver-nvidia-legacy-devel
 Summary:	driver-nvidia-legacy-devel package that allows easier monolithic X11->modular xorg upgrade
@@ -754,12 +757,12 @@ Group:		X11
 Requires:	xorg-driver-video-nvidia-legacy-devel
 
 %description -n X11-driver-nvidia-legacy-devel
-driver-nvidia-legacy-devel package that allows easier monolithic X11->modular xorg
-upgrade.
+driver-nvidia-legacy-devel package that allows easier monolithic
+X11->modular xorg upgrade.
 
 %description -n X11-driver-nvidia-legacy-devel -l pl.UTF-8
-Pakiet driver-nvidia-legacy-devel ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
+Pakiet driver-nvidia-legacy-devel ułatwiający przejście z
+monolitycznego X11 na modularne xorg.
 
 %package -n X11-driver-nvidia-legacy-progs
 Summary:	driver-nvidia-legacy-progs package that allows easier monolithic X11->modular xorg upgrade
@@ -768,12 +771,12 @@ Group:		X11
 Requires:	xorg-driver-video-nvidia-legacy-progs
 
 %description -n X11-driver-nvidia-legacy-progs
-driver-nvidia-legacy-progs package that allows easier monolithic X11->modular xorg
-upgrade.
+driver-nvidia-legacy-progs package that allows easier monolithic
+X11->modular xorg upgrade.
 
 %description -n X11-driver-nvidia-legacy-progs -l pl.UTF-8
-Pakiet driver-nvidia-legacy-progs ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
+Pakiet driver-nvidia-legacy-progs ułatwiający przejście z
+monolitycznego X11 na modularne xorg.
 
 %package -n X11-driver-rendition
 Summary:	driver-rendition package that allows easier monolithic X11->modular xorg upgrade
@@ -935,10 +938,12 @@ Requires:	xorg-driver-video-suncg3
 Provides:	XFree86-driver-suncg3 = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-suncg3
-driver-suncg3 package that allows easier monolithic X11->modular xorg upgrade.
+driver-suncg3 package that allows easier monolithic X11->modular xorg
+upgrade.
 
 %description -n X11-driver-suncg3 -l pl.UTF-8
-Pakiet driver-suncg3 ułatwiający przejście z monolitycznego X11 na modularne xorg.
+Pakiet driver-suncg3 ułatwiający przejście z monolitycznego X11 na
+modularne xorg.
 
 %package -n X11-driver-suncg6
 Summary:	driver-suncg6 package that allows easier monolithic X11->modular xorg upgrade
@@ -1100,16 +1105,16 @@ Requires:	xorg-app-bitmap
 Requires:	xorg-app-xditview
 Requires:	xorg-app-xmh
 Requires:	xorg-data-xbitmaps
-Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
 # Rest of libs deps will be fetched on per so-name rule.
-# Common obsoletes:
 Provides:	X11-DPS
+Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
+# Common obsoletes:
 Obsoletes:	X11-DPS
+Obsoletes:	X11-Xprint
+Obsoletes:	X11-Xprt
 Obsoletes:	X11-common
 Obsoletes:	XFree86-DPS
 Obsoletes:	XFree86-common
-Obsoletes:	X11-Xprint
-Obsoletes:	X11-Xprt
 
 %description -n X11-libs
 libs package that allows easier monolithic X11->modular xorg upgrade.
@@ -1639,26 +1644,26 @@ Requires:	xorg-font-font-bh-75dpi
 Requires:	xorg-font-font-bh-lucidatypewriter-75dpi
 Requires:	xorg-font-font-bitstream-75dpi
 Provides:	XFree86-fonts-75dpi = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-75dpi
-Obsoletes:	X11R6.1-75dpi-fonts
 Obsoletes:	X11-fonts-75dpi-ISO8859-1
-Obsoletes:	X11-fonts-75dpi-ISO8859-2
-Obsoletes:	X11-fonts-75dpi-ISO8859-3
-Obsoletes:	X11-fonts-75dpi-ISO8859-4
-Obsoletes:	X11-fonts-75dpi-ISO8859-9
 Obsoletes:	X11-fonts-75dpi-ISO8859-10
 Obsoletes:	X11-fonts-75dpi-ISO8859-13
 Obsoletes:	X11-fonts-75dpi-ISO8859-14
 Obsoletes:	X11-fonts-75dpi-ISO8859-15
+Obsoletes:	X11-fonts-75dpi-ISO8859-2
+Obsoletes:	X11-fonts-75dpi-ISO8859-3
+Obsoletes:	X11-fonts-75dpi-ISO8859-4
+Obsoletes:	X11-fonts-75dpi-ISO8859-9
+Obsoletes:	X11R6.1-75dpi-fonts
+Obsoletes:	XFree86-fonts-75dpi
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-1
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-2
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-3
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-4
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-9
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-10
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-13
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-14
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-15
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-2
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-3
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-4
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-9
 
 %description -n X11-fonts-75dpi
 fonts-75dpi package that allows easier monolithic X11->modular xorg
@@ -1678,26 +1683,26 @@ Requires:	xorg-font-font-bh-100dpi
 Requires:	xorg-font-font-bh-lucidatypewriter-100dpi
 Requires:	xorg-font-font-bitstream-100dpi
 Provides:	XFree86-fonts-100dpi = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-100dpi
-Obsoletes:	X11R6.1-100dpi-fonts
 Obsoletes:	X11-fonts-100dpi-ISO8859-1
-Obsoletes:	X11-fonts-100dpi-ISO8859-2
-Obsoletes:	X11-fonts-100dpi-ISO8859-3
-Obsoletes:	X11-fonts-100dpi-ISO8859-4
-Obsoletes:	X11-fonts-100dpi-ISO8859-9
 Obsoletes:	X11-fonts-100dpi-ISO8859-10
 Obsoletes:	X11-fonts-100dpi-ISO8859-13
 Obsoletes:	X11-fonts-100dpi-ISO8859-14
 Obsoletes:	X11-fonts-100dpi-ISO8859-15
+Obsoletes:	X11-fonts-100dpi-ISO8859-2
+Obsoletes:	X11-fonts-100dpi-ISO8859-3
+Obsoletes:	X11-fonts-100dpi-ISO8859-4
+Obsoletes:	X11-fonts-100dpi-ISO8859-9
+Obsoletes:	X11R6.1-100dpi-fonts
+Obsoletes:	XFree86-fonts-100dpi
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-1
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-2
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-3
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-4
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-9
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-10
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-13
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-14
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-15
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-2
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-3
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-4
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-9
 
 %description -n X11-fonts-100dpi
 fonts-100dpi package that allows easier monolithic X11->modular xorg
