@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	6
+Release:	7
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -106,7 +106,8 @@ modularne xorg.
 Summary:	OpenGL-libGL package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet OpenGL-libGL ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-libGL
+# either Mesa-libGL or some vendor-specific binary driver
+Requires:	OpenGL
 Provides:	XFree86-OpenGL-libGL = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-OpenGL-libGL
 
