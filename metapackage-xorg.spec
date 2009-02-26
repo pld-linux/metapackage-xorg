@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	7
+Release:	8
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1133,7 +1133,7 @@ Requires:	xorg-driver-input-keyboard
 Requires:	xorg-driver-input-mouse
 Requires:	xorg-driver-video-v4l
 Requires:	xorg-driver-video-vesa
-Requires:	xorg-driver-video-vga
+#Requires:	xorg-driver-video-vga
 Provides:	XFree86-modules = %{epoch}:%{version}-%{release}
 # not all deps here but we don't want to bring all modules on upgrade
 
@@ -1861,8 +1861,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -n X11-driver-newport
 %defattr(644,root,root,755)
 %endif
-%files -n X11-driver-nsc
-%defattr(644,root,root,755)
+#%files -n X11-driver-nsc
+#%defattr(644,root,root,755)
 %files -n X11-driver-nv
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia
