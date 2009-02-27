@@ -200,6 +200,9 @@ xorg.
 Summary:	Xserver package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet Xserver ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
+Requires:	dbus
+Requires:	hal
+Requires:	xorg-driver-input-evdev
 Requires:	xorg-xserver-server
 Provides:	XFree86-Xserver = %{epoch}:%{version}-%{release}
 
