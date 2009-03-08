@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	9
+Release:	10
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -261,7 +261,6 @@ Requires:	xorg-lib-libfontenc-devel
 Requires:	xorg-lib-liboldX-devel
 Requires:	xorg-lib-libxkbfile-devel
 Requires:	xorg-lib-libxkbui-devel
-Requires:	xorg-proto-applewmproto-devel
 Requires:	xorg-proto-bigreqsproto-devel
 Requires:	xorg-proto-compositeproto-devel
 Requires:	xorg-proto-damageproto-devel
