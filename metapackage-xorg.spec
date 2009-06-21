@@ -1815,8 +1815,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-Xserver-devel
 %defattr(644,root,root,755)
+%if "%{pld_release}" != "ti"
 %files -n X11-driver-apm
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-ark
 %defattr(644,root,root,755)
 %files -n X11-driver-ati
@@ -1873,12 +1875,14 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia-progs
 %defattr(644,root,root,755)
+%if "%{pld_release}" != "ti"
 %files -n X11-driver-nvidia-legacy
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia-legacy-devel
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia-legacy-progs
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-rendition
 %defattr(644,root,root,755)
 %files -n X11-driver-s3virge
