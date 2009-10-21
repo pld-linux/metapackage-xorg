@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	11
+Release:	12
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -22,7 +22,6 @@ xorg.
 Summary:	X11 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet X11 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-app-appres
 Requires:	xorg-app-bitmap
 Requires:	xorg-app-editres
 Requires:	xorg-app-iceauth
@@ -63,7 +62,6 @@ Requires:	xorg-app-xrdb
 Requires:	xorg-app-xrefresh
 Requires:	xorg-app-xrx
 Requires:	xorg-app-xset
-Requires:	xorg-app-xsetmode
 Requires:	xorg-app-xsetpointer
 Requires:	xorg-app-xsetroot
 Requires:	xorg-app-xsm
@@ -243,7 +241,6 @@ Requires:	xorg-lib-libXcomposite-devel
 Requires:	xorg-lib-libXcursor-devel
 Requires:	xorg-lib-libXdamage-devel
 Requires:	xorg-lib-libXdmcp-devel
-Requires:	xorg-lib-libXevie-devel
 Requires:	xorg-lib-libXfixes-devel
 Requires:	xorg-lib-libXfont-devel
 Requires:	xorg-lib-libXft-devel
@@ -265,7 +262,6 @@ Requires:	xorg-proto-bigreqsproto-devel
 Requires:	xorg-proto-compositeproto-devel
 Requires:	xorg-proto-damageproto-devel
 Requires:	xorg-proto-dmxproto-devel
-Requires:	xorg-proto-evieext-devel
 Requires:	xorg-proto-fixesproto-devel
 Requires:	xorg-proto-fontcacheproto-devel
 Requires:	xorg-proto-fontsproto-devel
@@ -277,7 +273,6 @@ Requires:	xorg-proto-recordproto-devel
 Requires:	xorg-proto-renderproto-devel
 Requires:	xorg-proto-resourceproto-devel
 Requires:	xorg-proto-scrnsaverproto-devel
-Requires:	xorg-proto-trapproto-devel
 Requires:	xorg-proto-videoproto-devel
 Requires:	xorg-proto-windowswmproto-devel
 Requires:	xorg-proto-xcmiscproto-devel
@@ -1176,7 +1171,6 @@ Requires:	xorg-lib-libXcomposite-static
 Requires:	xorg-lib-libXcursor-static
 Requires:	xorg-lib-libXdamage-static
 Requires:	xorg-lib-libXdmcp-static
-Requires:	xorg-lib-libXevie-static
 Requires:	xorg-lib-libXext-static
 Requires:	xorg-lib-libXfixes-static
 Requires:	xorg-lib-libXfont-static
