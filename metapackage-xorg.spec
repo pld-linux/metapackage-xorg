@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	12
+Release:	13
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1165,7 +1165,9 @@ Requires:	xorg-lib-libICE-static
 Requires:	xorg-lib-libSM-static
 Requires:	xorg-lib-libX11-static
 Requires:	xorg-lib-libXScrnSaver-static
+%if 0
 Requires:	xorg-lib-libXTrap-static
+%endif
 Requires:	xorg-lib-libXau-static
 Requires:	xorg-lib-libXcomposite-static
 Requires:	xorg-lib-libXcursor-static
@@ -1243,7 +1245,9 @@ Requires:	xorg-app-xplsprinters
 Requires:	xorg-app-xpr
 Requires:	xorg-app-xprehashprinterlist
 Requires:	xorg-app-xprop
+%if 0
 Requires:	xorg-app-xtrap
+%endif
 Requires:	xorg-app-xwininfo
 Provides:	XFree86-tools = %{epoch}:%{version}-%{release}
 
@@ -1795,7 +1799,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-OpenGL-devel
 %defattr(644,root,root,755)
-%if "%{pld_release}" != "ti"
+%if 0
 %files -n X11-OpenGL-static
 %defattr(644,root,root,755)
 %endif
@@ -1811,7 +1815,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-Xserver-devel
 %defattr(644,root,root,755)
-%if "%{pld_release}" != "ti"
+%if 0
 %files -n X11-driver-apm
 %defattr(644,root,root,755)
 %endif
@@ -1871,7 +1875,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia-progs
 %defattr(644,root,root,755)
-%if "%{pld_release}" != "ti"
+%if 0
 %files -n X11-driver-nvidia-legacy
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia-legacy-devel
@@ -1881,8 +1885,10 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 %files -n X11-driver-rendition
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-s3virge
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-s3
 %defattr(644,root,root,755)
 %files -n X11-driver-savage
@@ -1917,8 +1923,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-tga
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-trident
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-tseng
 %defattr(644,root,root,755)
 %files -n X11-driver-vmware
