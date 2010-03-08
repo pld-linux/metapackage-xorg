@@ -2,7 +2,7 @@ Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	13
+Release:	14
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1837,8 +1837,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-fbdev
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-firegl
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-glide
 %defattr(644,root,root,755)
 %files -n X11-driver-glint
