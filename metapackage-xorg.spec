@@ -1,22 +1,123 @@
-Summary:	Metapackage that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Metapakiet ułatwiający przejście z monolitycznego X11 na modularne xorg
+Summary:	Metapackage that installs a set of Xorg packages needed to run on any configuration
+Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	14
+Release:	15
 Epoch:		1
 License:	GPL
 Group:		X11
+Requires:	xorg-app-iceauth
+Requires:	xorg-app-rgb
+Requires:	xorg-app-sessreg
+Requires:	xorg-app-setxkbmap
+Requires:	xorg-app-twm
+Requires:	xorg-app-xauth
+Requires:	xorg-app-xdpyinfo
+Requires:	xorg-app-xkbcomp
+Requires:	xorg-app-xmessage
+Requires:	xorg-app-xmodmap
+Requires:	xorg-app-xprop
+Requires:	xorg-app-xset
+Requires:	xorg-app-xsetroot
+Requires:	xorg-data-xbitmaps
+Requires:	xorg-driver-input-evdev
+Requires:	xorg-driver-input-keyboard
+Requires:	xorg-driver-input-mouse
+Requires:	xorg-driver-input-synaptics
+Requires:	xorg-driver-video-ati
+Requires:	xorg-driver-video-chips
+Requires:	xorg-driver-video-cirrus
+Requires:	xorg-driver-video-glint
+Requires:	xorg-driver-video-i740
+Requires:	xorg-driver-video-intel
+Requires:	xorg-driver-video-mach64
+Requires:	xorg-driver-video-mga
+Requires:	xorg-driver-video-nv
+Requires:	xorg-driver-video-openchrome
+Requires:	xorg-driver-video-r128
+Requires:	xorg-driver-video-radeonhd
+Requires:	xorg-driver-video-s3
+Requires:	xorg-driver-video-s3virge
+Requires:	xorg-driver-video-savage
+Requires:	xorg-driver-video-sis
+Requires:	xorg-driver-video-sisusb
+Requires:	xorg-driver-video-tdfx
+Requires:	xorg-driver-video-tseng
+Requires:	xorg-driver-video-v4l
+Requires:	xorg-driver-video-vboxvideo
+Requires:	xorg-driver-video-vesa
+Requires:	xorg-driver-video-vmware
+Requires:	xorg-font-encodings
+Requires:	xorg-font-font-adobe-utopia-type1
+Requires:	xorg-font-font-alias
+Requires:	xorg-font-font-arabic-misc
+Requires:	xorg-font-font-bh-ttf
+Requires:	xorg-font-font-bh-type1
+Requires:	xorg-font-font-bitstream-type1
+Requires:	xorg-font-font-cursor-misc
+Requires:	xorg-font-font-daewoo-misc
+Requires:	xorg-font-font-dec-misc
+Requires:	xorg-font-font-ibm-type1
+Requires:	xorg-font-font-isas-misc
+Requires:	xorg-font-font-micro-misc
+Requires:	xorg-font-font-misc-ethiopic
+Requires:	xorg-font-font-misc-meltho
+Requires:	xorg-font-font-misc-misc
+Requires:	xorg-font-font-misc-misc-base
+Requires:	xorg-font-font-mutt-misc
+Requires:	xorg-font-font-schumacher-misc
+Requires:	xorg-font-font-sony-misc
+Requires:	xorg-font-font-sun-misc
+Requires:	xorg-font-font-xfree86-type1
+Requires:	xorg-lib-libICE
+Requires:	xorg-lib-libSM
+Requires:	xorg-lib-libX11
+Requires:	xorg-lib-libXScrnSaver
+Requires:	xorg-lib-libXau
+Requires:	xorg-lib-libXcomposite
+Requires:	xorg-lib-libXcursor
+Requires:	xorg-lib-libXdamage
+Requires:	xorg-lib-libXdmcp
+Requires:	xorg-lib-libXevie
+Requires:	xorg-lib-libXext
+Requires:	xorg-lib-libXfixes
+Requires:	xorg-lib-libXfont
+Requires:	xorg-lib-libXfontcache
+Requires:	xorg-lib-libXft
+Requires:	xorg-lib-libXi
+Requires:	xorg-lib-libXinerama
+Requires:	xorg-lib-libXmu
+Requires:	xorg-lib-libXp
+Requires:	xorg-lib-libXpm
+Requires:	xorg-lib-libXrandr
+Requires:	xorg-lib-libXrender
+Requires:	xorg-lib-libXres
+Requires:	xorg-lib-libXt
+Requires:	xorg-lib-libXtst
+Requires:	xorg-lib-libXv
+Requires:	xorg-lib-libXvMC
+Requires:	xorg-lib-libXxf86dga
+Requires:	xorg-lib-libXxf86misc
+Requires:	xorg-lib-libXxf86vm
+Requires:	xorg-lib-libdmx
+Requires:	xorg-lib-libfontenc
+Requires:	xorg-lib-libpciaccess
+Requires:	xorg-lib-libxkbfile
+Requires:	xorg-xserver-libdri
+Requires:	xorg-xserver-libglx
+Requires:	xorg-xserver-server
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # don't create -debuginfo package
 %define		_enable_debug_packages	0
 
 %description
-Metapackage that allows easier monolithic X11->modular xorg upgrade.
+Metapackage that installs a set of Xorg packages needed to run on any
+configuration.
 
 %description -l pl.UTF-8
-Metapakiet ułatwiający przejście z monolitycznego X11 na modularne
-xorg.
+Metapakiet instalujący zestaw pakietóww potrzebnych by uruchomić Xorg
+na każdym sprzęcie.
 
 %package -n X11
 Summary:	X11 package that allows easier monolithic X11->modular xorg upgrade
