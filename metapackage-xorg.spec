@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	15
+Release:	16
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1886,6 +1886,8 @@ modularne xorg.
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%files
+%defattr(644,root,root,755)
 %files -n X11
 %defattr(644,root,root,755)
 #%files -n X11-Xprint
