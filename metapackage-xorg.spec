@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	16
+Release:	17
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1203,7 +1203,9 @@ Group:		X11
 Requires:	xorg-app-bitmap
 Requires:	xorg-app-xditview
 Requires:	xorg-app-xmh
-Requires:	xorg-data-xbitmaps
+# help poldek out a bit specifying these packages explicitly
+Requires:	xorg-lib-libXi
+Requires:	xorg-lib-libXtst
 # Rest of libs deps will be fetched on per so-name rule.
 Provides:	X11-DPS
 Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
