@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	17
+Release:	18
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -78,7 +78,6 @@ Requires:	xorg-lib-libXcomposite
 Requires:	xorg-lib-libXcursor
 Requires:	xorg-lib-libXdamage
 Requires:	xorg-lib-libXdmcp
-Requires:	xorg-lib-libXevie
 Requires:	xorg-lib-libXext
 Requires:	xorg-lib-libXfixes
 Requires:	xorg-lib-libXfont
