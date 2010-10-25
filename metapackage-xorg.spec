@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	18
+Release:	19
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -222,7 +222,7 @@ Summary:	OpenGL-libs package that allows easier monolithic X11->modular xorg upg
 Summary(pl.UTF-8):	Pakiet OpenGL-libs ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	Mesa-libGLU
-Requires:	Mesa-utils
+Requires:	mesa-utils
 Provides:	XFree86-OpenGL-libs = %{epoch}:%{version}-%{release}
 
 %description -n X11-OpenGL-libs
