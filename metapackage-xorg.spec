@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	20
+Release:	21
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -298,7 +298,6 @@ Summary:	Xserver package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet Xserver ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	dbus
-Requires:	hal
 Requires:	xorg-driver-input-evdev
 Requires:	xorg-xserver-server
 Provides:	XFree86-Xserver = %{epoch}:%{version}-%{release}
