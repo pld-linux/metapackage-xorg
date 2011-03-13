@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	21
+Release:	22
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -794,7 +794,7 @@ modularne xorg.
 Summary:	driver-nvidia package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-nvidia ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-nvidia-legacy3
+Requires:	xorg-driver-video-nouveau
 
 %description -n X11-driver-nvidia
 driver-nvidia package that allows easier monolithic X11->modular xorg
@@ -808,7 +808,6 @@ modularne xorg.
 Summary:	driver-nvidia-devel package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-nvidia-devel ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-nvidia-legacy3-devel
 
 %description -n X11-driver-nvidia-devel
 driver-nvidia-devel package that allows easier monolithic X11->modular
@@ -822,7 +821,6 @@ na modularne xorg.
 Summary:	driver-nvidia-progs package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-nvidia-progs ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-nvidia-legacy3-progs
 
 %description -n X11-driver-nvidia-progs
 driver-nvidia-progs package that allows easier monolithic X11->modular
@@ -836,7 +834,7 @@ na modularne xorg.
 Summary:	driver-nvidia-legacy package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-nvidia-legacy ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-nvidia-legacy
+Requires:	xorg-driver-video-nouveau
 
 %description -n X11-driver-nvidia-legacy
 driver-nvidia-legacy package that allows easier monolithic
@@ -850,7 +848,6 @@ na modularne xorg.
 Summary:	driver-nvidia-legacy-devel package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-nvidia-legacy-devel ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-nvidia-legacy-devel
 
 %description -n X11-driver-nvidia-legacy-devel
 driver-nvidia-legacy-devel package that allows easier monolithic
@@ -864,7 +861,6 @@ monolitycznego X11 na modularne xorg.
 Summary:	driver-nvidia-legacy-progs package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-nvidia-legacy-progs ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-nvidia-legacy-progs
 
 %description -n X11-driver-nvidia-legacy-progs
 driver-nvidia-legacy-progs package that allows easier monolithic
