@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.0.0
-Release:	22
+Release:	23
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -1925,8 +1925,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-r128
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-r128-dri
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-radeon-dri
 %defattr(644,root,root,755)
 %files -n X11-driver-chips
@@ -1953,12 +1955,16 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-i810
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-i810-dri
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-mga
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-mga-dri
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-neomagic
 %defattr(644,root,root,755)
 %ifarch mips
@@ -1991,14 +1997,18 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 %files -n X11-driver-s3
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-savage
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-siliconmotion
 %defattr(644,root,root,755)
 %files -n X11-driver-sis
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-sis-dri
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-sisusb
 %defattr(644,root,root,755)
 %ifarch sparc sparcv9 sparc64
@@ -2019,8 +2029,10 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 %files -n X11-driver-tdfx
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-tdfx-dri
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-tga
 %defattr(644,root,root,755)
 %if 0
