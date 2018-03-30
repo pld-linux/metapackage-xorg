@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.7
-Release:	6
+Release:	7
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -377,7 +377,6 @@ Requires:	xorg-proto-renderproto-devel
 Requires:	xorg-proto-resourceproto-devel
 Requires:	xorg-proto-scrnsaverproto-devel
 Requires:	xorg-proto-videoproto-devel
-Requires:	xorg-proto-windowswmproto-devel
 Requires:	xorg-proto-xcmiscproto-devel
 Requires:	xorg-proto-xextproto-devel
 Requires:	xorg-proto-xf86bigfontproto-devel
@@ -387,7 +386,7 @@ Requires:	xorg-proto-xf86rushproto-devel
 Requires:	xorg-proto-xf86vidmodeproto-devel
 Requires:	xorg-proto-xineramaproto-devel
 Requires:	xorg-proto-xproto-devel
-Requires:	xorg-proto-xproxymanagementprotocol-devel
+Requires:	xorg-proto-xproxymngproto-devel
 Provides:	XFree86-devel = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-devel
