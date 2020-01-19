@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.7
-Release:	7
+Release:	8
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -46,7 +46,6 @@ Requires:	xorg-driver-video-tga
 Requires:	xorg-driver-video-trident
 Requires:	xorg-driver-video-tseng
 Requires:	xorg-driver-video-v4l
-Requires:	xorg-driver-video-vboxvideo
 Requires:	xorg-driver-video-vesa
 Requires:	xorg-driver-video-vmware
 Requires:	xorg-driver-video-voodoo
