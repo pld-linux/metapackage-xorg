@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.7
-Release:	8
+Release:	9
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -32,18 +32,14 @@ Requires:	xorg-driver-video-fbdev
 #%ifarch %{ix86}
 #Requires:	xorg-driver-video-geode
 #%endif
-Requires:	xorg-driver-video-glint
 Requires:	xorg-driver-video-i128
 Requires:	xorg-driver-video-i740
 Requires:	xorg-driver-video-intel
 Requires:	xorg-driver-video-mga
 Requires:	xorg-driver-video-nv
 Requires:	xorg-driver-video-openchrome
-Requires:	xorg-driver-video-s3
 Requires:	xorg-driver-video-sisusb
 Requires:	xorg-driver-video-tdfx
-Requires:	xorg-driver-video-tga
-Requires:	xorg-driver-video-trident
 Requires:	xorg-driver-video-tseng
 Requires:	xorg-driver-video-v4l
 Requires:	xorg-driver-video-vesa
@@ -1948,10 +1944,12 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 %files -n X11-driver-glide
 %defattr(644,root,root,755)
+%if 0
 %files -n X11-driver-glint
 %defattr(644,root,root,755)
 %files -n X11-driver-glint-dri
 %defattr(644,root,root,755)
+%endif
 %files -n X11-driver-i128
 %defattr(644,root,root,755)
 %files -n X11-driver-i2c
@@ -1997,10 +1995,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-s3virge
 %defattr(644,root,root,755)
-%endif
 %files -n X11-driver-s3
 %defattr(644,root,root,755)
-%if 0
 %files -n X11-driver-savage
 %defattr(644,root,root,755)
 %files -n X11-driver-siliconmotion
@@ -2033,10 +2029,8 @@ rm -rf $RPM_BUILD_ROOT
 %if 0
 %files -n X11-driver-tdfx-dri
 %defattr(644,root,root,755)
-%endif
 %files -n X11-driver-tga
 %defattr(644,root,root,755)
-%if 0
 %files -n X11-driver-trident
 %defattr(644,root,root,755)
 %endif
