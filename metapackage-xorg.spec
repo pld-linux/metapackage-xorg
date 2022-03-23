@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.7
-Release:	9
+Release:	10
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -505,8 +505,6 @@ modularne xorg.
 Summary:	driver-radeon-dri package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-radeon-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-dri-driver-ati-radeon-R100
-Requires:	Mesa-dri-driver-ati-radeon-R200
 Requires:	Mesa-dri-driver-ati-radeon-R300
 Provides:	XFree86-driver-radeon-dri = %{epoch}:%{version}-%{release}
 
