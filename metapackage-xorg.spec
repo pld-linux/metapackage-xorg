@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.7
-Release:	10
+Release:	11
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -80,7 +80,6 @@ Requires:	xorg-lib-libXdmcp
 Requires:	xorg-lib-libXext
 Requires:	xorg-lib-libXfixes
 Requires:	xorg-lib-libXfont
-Requires:	xorg-lib-libXfontcache
 Requires:	xorg-lib-libXft
 Requires:	xorg-lib-libXi
 Requires:	xorg-lib-libXinerama
@@ -95,7 +94,6 @@ Requires:	xorg-lib-libXtst
 Requires:	xorg-lib-libXv
 Requires:	xorg-lib-libXvMC
 Requires:	xorg-lib-libXxf86dga
-Requires:	xorg-lib-libXxf86misc
 Requires:	xorg-lib-libXxf86vm
 Requires:	xorg-lib-libdmx
 Requires:	xorg-lib-libfontenc
@@ -104,6 +102,23 @@ Requires:	xorg-lib-libxkbfile
 Requires:	xorg-xserver-libdri
 Requires:	xorg-xserver-libglx
 Requires:	xorg-xserver-server
+Obsoletes:	X11-driver-glide
+Obsoletes:	xorg-app-lbxproxy
+Obsoletes:	xorg-app-luit
+Obsoletes:	xorg-app-proxymngr
+Obsoletes:	xorg-app-xfindproxy
+Obsoletes:	xorg-app-xfwp
+Obsoletes:	xorg-app-xrx
+Obsoletes:	xorg-app-xsetpointer
+Obsoletes:	xorg-app-xtrap
+Obsoletes:	xorg-driver-video-glide
+Obsoletes:	xorg-font-font-bitstream-speedo
+Obsoletes:	xorg-lib-liblbxutil
+Obsoletes:	xorg-lib-liboldX
+Obsoletes:	xorg-lib-libXevie
+Obsoletes:	xorg-lib-libXfontcache
+Obsoletes:	xorg-lib-libxkbui
+Obsoletes:	xorg-lib-libXxf86misc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # don't create -debuginfo package
@@ -124,11 +139,8 @@ Group:		X11
 Requires:	xorg-app-bitmap
 Requires:	xorg-app-editres
 Requires:	xorg-app-iceauth
-Requires:	xorg-app-lbxproxy
-Requires:	xorg-app-luit
 Requires:	xorg-app-mkfontdir
 Requires:	xorg-app-mkfontscale
-Requires:	xorg-app-proxymngr
 Requires:	xorg-app-rgb
 Requires:	xorg-app-rstart
 Requires:	xorg-app-scripts
@@ -142,8 +154,6 @@ Requires:	xorg-app-xcursorgen
 Requires:	xorg-app-xditview
 Requires:	xorg-app-xdpyinfo
 Requires:	xorg-app-xf86dga
-Requires:	xorg-app-xfindproxy
-Requires:	xorg-app-xfwp
 Requires:	xorg-app-xgamma
 Requires:	xorg-app-xhost
 Requires:	xorg-app-xinit
@@ -159,9 +169,7 @@ Requires:	xorg-app-xprop
 Requires:	xorg-app-xrandr
 Requires:	xorg-app-xrdb
 Requires:	xorg-app-xrefresh
-Requires:	xorg-app-xrx
 Requires:	xorg-app-xset
-Requires:	xorg-app-xsetpointer
 Requires:	xorg-app-xsetroot
 Requires:	xorg-app-xsm
 Requires:	xorg-app-xstdcmap
@@ -353,9 +361,7 @@ Requires:	xorg-lib-libXt-devel
 Requires:	xorg-lib-libXv-devel
 Requires:	xorg-lib-libXvMC-devel
 Requires:	xorg-lib-libfontenc-devel
-Requires:	xorg-lib-liboldX-devel
 Requires:	xorg-lib-libxkbfile-devel
-Requires:	xorg-lib-libxkbui-devel
 Requires:	xorg-proto-bigreqsproto-devel
 Requires:	xorg-proto-compositeproto-devel
 Requires:	xorg-proto-damageproto-devel
@@ -573,21 +579,6 @@ upgrade.
 
 %description -n X11-driver-firegl -l pl.UTF-8
 Pakiet driver-firegl ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-glide
-Summary:	driver-glide package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-glide ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-driver-video-voodoo
-Provides:	XFree86-driver-glide = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-glide
-driver-glide package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-glide -l pl.UTF-8
-Pakiet driver-glide ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-glint
@@ -1258,9 +1249,6 @@ Requires:	xorg-lib-libICE-static
 Requires:	xorg-lib-libSM-static
 Requires:	xorg-lib-libX11-static
 Requires:	xorg-lib-libXScrnSaver-static
-%if 0
-Requires:	xorg-lib-libXTrap-static
-%endif
 Requires:	xorg-lib-libXau-static
 Requires:	xorg-lib-libXcomposite-static
 Requires:	xorg-lib-libXcursor-static
@@ -1269,7 +1257,6 @@ Requires:	xorg-lib-libXdmcp-static
 Requires:	xorg-lib-libXext-static
 Requires:	xorg-lib-libXfixes-static
 Requires:	xorg-lib-libXfont-static
-Requires:	xorg-lib-libXfontcache-static
 Requires:	xorg-lib-libXft-static
 Requires:	xorg-lib-libXi-static
 Requires:	xorg-lib-libXinerama-static
@@ -1284,11 +1271,9 @@ Requires:	xorg-lib-libXtst-static
 Requires:	xorg-lib-libXv-static
 Requires:	xorg-lib-libXvMC-static
 Requires:	xorg-lib-libXxf86dga-static
-Requires:	xorg-lib-libXxf86misc-static
 Requires:	xorg-lib-libXxf86vm-static
 Requires:	xorg-lib-libfontenc-static
 Requires:	xorg-lib-libxkbfile-static
-Requires:	xorg-lib-libxkbui-static
 Provides:	XFree86-static = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-static
@@ -1338,9 +1323,6 @@ Requires:	xorg-app-xplsprinters
 Requires:	xorg-app-xpr
 Requires:	xorg-app-xprehashprinterlist
 Requires:	xorg-app-xprop
-%if 0
-Requires:	xorg-app-xtrap
-%endif
 Requires:	xorg-app-xwininfo
 Provides:	XFree86-tools = %{epoch}:%{version}-%{release}
 
@@ -1940,8 +1922,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -n X11-driver-firegl
 %defattr(644,root,root,755)
 %endif
-%files -n X11-driver-glide
-%defattr(644,root,root,755)
 %if 0
 %files -n X11-driver-glint
 %defattr(644,root,root,755)
