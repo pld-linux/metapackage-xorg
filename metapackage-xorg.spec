@@ -102,23 +102,23 @@ Requires:	xorg-lib-libxkbfile
 Requires:	xorg-xserver-libdri
 Requires:	xorg-xserver-libglx
 Requires:	xorg-xserver-server
-Obsoletes:	X11-driver-glide
-Obsoletes:	xorg-app-lbxproxy
-Obsoletes:	xorg-app-luit
-Obsoletes:	xorg-app-proxymngr
-Obsoletes:	xorg-app-xfindproxy
-Obsoletes:	xorg-app-xfwp
-Obsoletes:	xorg-app-xrx
-Obsoletes:	xorg-app-xsetpointer
-Obsoletes:	xorg-app-xtrap
-Obsoletes:	xorg-driver-video-glide
-Obsoletes:	xorg-font-font-bitstream-speedo
-Obsoletes:	xorg-lib-liblbxutil
-Obsoletes:	xorg-lib-liboldX
-Obsoletes:	xorg-lib-libXevie
-Obsoletes:	xorg-lib-libXfontcache
-Obsoletes:	xorg-lib-libxkbui
-Obsoletes:	xorg-lib-libXxf86misc
+Obsoletes:	X11-driver-glide < 1:7
+Obsoletes:	xorg-app-lbxproxy < 1.0.4
+Obsoletes:	xorg-app-luit < 1.1.2
+Obsoletes:	xorg-app-proxymngr < 1.0.5
+Obsoletes:	xorg-app-xfindproxy < 1.0.5
+Obsoletes:	xorg-app-xfwp < 1.0.4
+Obsoletes:	xorg-app-xrx < 1.0.5
+Obsoletes:	xorg-app-xsetpointer < 1.0.2
+Obsoletes:	xorg-app-xtrap < 1.0.4
+Obsoletes:	xorg-driver-video-glide < 1.2.3
+Obsoletes:	xorg-font-font-bitstream-speedo < 1.0.3
+Obsoletes:	xorg-lib-liblbxutil < 1.1.1
+Obsoletes:	xorg-lib-liboldX < 1.0.2
+Obsoletes:	xorg-lib-libXevie < 1.0.4
+Obsoletes:	xorg-lib-libXfontcache < 1.0.6
+Obsoletes:	xorg-lib-libxkbui < 1.0.3
+Obsoletes:	xorg-lib-libXxf86misc < 1.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # don't create -debuginfo package
@@ -197,7 +197,7 @@ Summary(pl.UTF-8):	Pakiet OpenGL-core ułatwiający przejście z monolitycznego 
 Group:		X11
 Requires:	xorg-xserver-server
 Provides:	XFree86-OpenGL-core = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-OpenGL-core
+Obsoletes:	XFree86-OpenGL-core < 1:5
 
 %description -n X11-OpenGL-core
 OpenGL-core package that allows easier monolithic X11->modular xorg
@@ -214,7 +214,7 @@ Group:		X11
 # either Mesa-libGL or some vendor-specific binary driver
 Requires:	OpenGL
 Provides:	XFree86-OpenGL-libGL = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-OpenGL-libGL
+Obsoletes:	XFree86-OpenGL-libGL < 1:5
 
 %description -n X11-OpenGL-libGL
 OpenGL-libGL package that allows easier monolithic X11->modular xorg
@@ -245,7 +245,7 @@ Summary:	OpenGL-devel-base package that allows easier monolithic X11->modular xo
 Summary(pl.UTF-8):	Pakiet OpenGL-devel-base ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Provides:	XFree86-OpenGL-devel-base = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-OpenGL-devel-base
+Obsoletes:	XFree86-OpenGL-devel-base < 1:5
 
 %description -n X11-OpenGL-devel-base
 OpenGL-devel-base package that allows easier monolithic X11->modular
@@ -261,7 +261,7 @@ Summary(pl.UTF-8):	Pakiet OpenGL-devel ułatwiający przejście z monolitycznego
 Group:		X11
 Requires:	Mesa-libGL-devel
 Provides:	XFree86-OpenGL-devel = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-OpenGL-devel
+Obsoletes:	XFree86-OpenGL-devel < 1:5
 
 %description -n X11-OpenGL-devel
 OpenGL-devel package that allows easier monolithic X11->modular xorg
@@ -277,7 +277,7 @@ Summary(pl.UTF-8):	Pakiet OpenGL-static ułatwiający przejście z monolityczneg
 Group:		X11
 Requires:	Mesa-libGL-static
 Provides:	XFree86-OpenGL-static = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-OpenGL-static
+Obsoletes:	XFree86-OpenGL-static < 1:5
 
 %description -n X11-OpenGL-static
 OpenGL-static package that allows easier monolithic X11->modular xorg
@@ -390,8 +390,8 @@ Requires:	xorg-proto-xproto-devel
 Requires:	xorg-proto-xproxymngproto-devel
 Provides:	XFree86-devel = %{epoch}:%{version}-%{release}
 # common obsoletes
-Obsoletes:	X11-DPS-devel
-Obsoletes:	XFree86-DPS-devel
+Obsoletes:	X11-DPS-devel < 1:7
+Obsoletes:	XFree86-DPS-devel < 1:5
 
 %description -n X11-devel
 devel package that allows easier monolithic X11->modular xorg upgrade.
@@ -1191,12 +1191,12 @@ Requires:	xorg-lib-libXtst
 Provides:	X11-DPS
 Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
 # Common obsoletes:
-Obsoletes:	X11-DPS
-Obsoletes:	X11-Xprint
-Obsoletes:	X11-Xprt
-Obsoletes:	X11-common
-Obsoletes:	XFree86-DPS
-Obsoletes:	XFree86-common
+Obsoletes:	X11-DPS < 1:7
+Obsoletes:	X11-Xprint < 1:7
+Obsoletes:	X11-Xprt < 1:7
+Obsoletes:	X11-common < 1:7
+Obsoletes:	XFree86-DPS < 1:5
+Obsoletes:	XFree86-common < 1:5
 
 %description -n X11-libs
 libs package that allows easier monolithic X11->modular xorg upgrade.
@@ -1276,8 +1276,8 @@ Requires:	xorg-lib-libfontenc-static
 Requires:	xorg-lib-libxkbfile-static
 Provides:	XFree86-static = %{epoch}:%{version}-%{release}
 # common obsoletes
-Obsoletes:	X11-DPS-static
-Obsoletes:	XFree86-DPS-static
+Obsoletes:	X11-DPS-static < 1:7
+Obsoletes:	XFree86-DPS-static < 1:5
 
 %description -n X11-static
 static package that allows easier monolithic X11->modular xorg
@@ -1369,8 +1369,8 @@ Summary(pl.UTF-8):	Pakiet twm ułatwiający przejście z monolitycznego X11 na m
 Group:		X11
 Requires:	xorg-app-twm
 Provides:	twm = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-twm
-Obsoletes:	twm
+Obsoletes:	XFree86-twm < 1:5
+Obsoletes:	twm < 1:5
 
 %description -n X11-twm
 twm package that allows easier monolithic X11->modular xorg upgrade.
@@ -1413,8 +1413,8 @@ Summary(pl.UTF-8):	Pakiet xfs ułatwiający przejście z monolitycznego X11 na m
 Group:		X11
 Requires:	xorg-app-xfs
 Provides:	xfs = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-xfs
-Obsoletes:	xfs
+Obsoletes:	XFree86-xfs < 1:5
+Obsoletes:	xfs < 1:5
 
 %description -n X11-xfs
 xfs package that allows easier monolithic X11->modular xorg upgrade.
@@ -1461,7 +1461,7 @@ Summary(pl.UTF-8):	Pakiet fonts-utils ułatwiający przejście z monolitycznego 
 Group:		X11
 Requires:	xorg-font-font-util
 Provides:	XFree86-fonts-utils = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-utils
+Obsoletes:	XFree86-fonts-utils < 5
 
 %description -n X11-fonts-utils
 fonts-utils package that allows easier monolithic X11->modular xorg
@@ -1492,7 +1492,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-1 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-1
 Provides:	XFree86-fonts-ISO8859-1 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-1
+Obsoletes:	XFree86-fonts-ISO8859-1 < 5
 
 %description -n X11-fonts-ISO8859-1
 fonts-ISO8859-1 package that allows easier monolithic X11->modular
@@ -1508,7 +1508,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-2 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-2
 Provides:	XFree86-fonts-ISO8859-2 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-2
+Obsoletes:	XFree86-fonts-ISO8859-2 < 5
 
 %description -n X11-fonts-ISO8859-2
 fonts-ISO8859-2 package that allows easier monolithic X11->modular
@@ -1524,7 +1524,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-3 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-3
 Provides:	XFree86-fonts-ISO8859-3 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-3
+Obsoletes:	XFree86-fonts-ISO8859-3 < 5
 
 %description -n X11-fonts-ISO8859-3
 fonts-ISO8859-3 package that allows easier monolithic X11->modular
@@ -1540,7 +1540,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-4 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-4
 Provides:	XFree86-fonts-ISO8859-4 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-4
+Obsoletes:	XFree86-fonts-ISO8859-4 < 5
 
 %description -n X11-fonts-ISO8859-4
 fonts-ISO8859-4 package that allows easier monolithic X11->modular
@@ -1556,7 +1556,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-5 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-5
 Provides:	XFree86-fonts-ISO8859-5 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-5
+Obsoletes:	XFree86-fonts-ISO8859-5 < 5
 
 %description -n X11-fonts-ISO8859-5
 fonts-ISO8859-5 package that allows easier monolithic X11->modular
@@ -1572,7 +1572,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-7 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-7
 Provides:	XFree86-fonts-ISO8859-7 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-7
+Obsoletes:	XFree86-fonts-ISO8859-7 < 5
 
 %description -n X11-fonts-ISO8859-7
 fonts-ISO8859-7 package that allows easier monolithic X11->modular
@@ -1588,7 +1588,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-8 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-8
 Provides:	XFree86-fonts-ISO8859-8 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-8
+Obsoletes:	XFree86-fonts-ISO8859-8 < 5
 
 %description -n X11-fonts-ISO8859-8
 fonts-ISO8859-8 package that allows easier monolithic X11->modular
@@ -1604,7 +1604,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-9 ułatwiający przejście z monolityczn
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-9
 Provides:	XFree86-fonts-ISO8859-9 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-9
+Obsoletes:	XFree86-fonts-ISO8859-9 < 5
 
 %description -n X11-fonts-ISO8859-9
 fonts-ISO8859-9 package that allows easier monolithic X11->modular
@@ -1620,7 +1620,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-10 ułatwiający przejście z monolitycz
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-10
 Provides:	XFree86-fonts-ISO8859-10 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-10
+Obsoletes:	XFree86-fonts-ISO8859-10 < 5
 
 %description -n X11-fonts-ISO8859-10
 fonts-ISO8859-10 package that allows easier monolithic X11->modular
@@ -1636,7 +1636,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-11 ułatwiający przejście z monolitycz
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-11
 Provides:	XFree86-fonts-ISO8859-11 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-11
+Obsoletes:	XFree86-fonts-ISO8859-11 < 5
 
 %description -n X11-fonts-ISO8859-11
 fonts-ISO8859-11 package that allows easier monolithic X11->modular
@@ -1652,7 +1652,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-13 ułatwiający przejście z monolitycz
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-13
 Provides:	XFree86-fonts-ISO8859-13 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-13
+Obsoletes:	XFree86-fonts-ISO8859-13 < 5
 
 %description -n X11-fonts-ISO8859-13
 fonts-ISO8859-13 package that allows easier monolithic X11->modular
@@ -1668,7 +1668,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-14 ułatwiający przejście z monolitycz
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-14
 Provides:	XFree86-fonts-ISO8859-14 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-14
+Obsoletes:	XFree86-fonts-ISO8859-14 < 5
 
 %description -n X11-fonts-ISO8859-14
 fonts-ISO8859-14 package that allows easier monolithic X11->modular
@@ -1684,7 +1684,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-15 ułatwiający przejście z monolitycz
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-15
 Provides:	XFree86-fonts-ISO8859-15 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-15
+Obsoletes:	XFree86-fonts-ISO8859-15 < 5
 
 %description -n X11-fonts-ISO8859-15
 fonts-ISO8859-15 package that allows easier monolithic X11->modular
@@ -1700,7 +1700,7 @@ Summary(pl.UTF-8):	Pakiet fonts-ISO8859-16 ułatwiający przejście z monolitycz
 Group:		Fonts
 Requires:	xorg-font-font-misc-misc-ISO8859-16
 Provides:	XFree86-fonts-ISO8859-16 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-ISO8859-16
+Obsoletes:	XFree86-fonts-ISO8859-16 < 5
 
 %description -n X11-fonts-ISO8859-16
 fonts-ISO8859-16 package that allows easier monolithic X11->modular
@@ -1720,26 +1720,26 @@ Requires:	xorg-font-font-bh-75dpi
 Requires:	xorg-font-font-bh-lucidatypewriter-75dpi
 Requires:	xorg-font-font-bitstream-75dpi
 Provides:	XFree86-fonts-75dpi = %{epoch}:%{version}-%{release}
-Obsoletes:	X11-fonts-75dpi-ISO8859-1
-Obsoletes:	X11-fonts-75dpi-ISO8859-10
-Obsoletes:	X11-fonts-75dpi-ISO8859-13
-Obsoletes:	X11-fonts-75dpi-ISO8859-14
-Obsoletes:	X11-fonts-75dpi-ISO8859-15
-Obsoletes:	X11-fonts-75dpi-ISO8859-2
-Obsoletes:	X11-fonts-75dpi-ISO8859-3
-Obsoletes:	X11-fonts-75dpi-ISO8859-4
-Obsoletes:	X11-fonts-75dpi-ISO8859-9
+Obsoletes:	X11-fonts-75dpi-ISO8859-1 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-10 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-13 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-14 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-15 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-2 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-3 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-4 < 7
+Obsoletes:	X11-fonts-75dpi-ISO8859-9 < 7
 Obsoletes:	X11R6.1-75dpi-fonts
-Obsoletes:	XFree86-fonts-75dpi
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-1
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-10
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-13
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-14
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-15
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-2
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-3
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-4
-Obsoletes:	XFree86-fonts-75dpi-ISO8859-9
+Obsoletes:	XFree86-fonts-75dpi < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-1 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-10 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-13 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-14 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-15 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-2 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-3 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-4 < 5
+Obsoletes:	XFree86-fonts-75dpi-ISO8859-9 < 5
 
 %description -n X11-fonts-75dpi
 fonts-75dpi package that allows easier monolithic X11->modular xorg
@@ -1759,26 +1759,26 @@ Requires:	xorg-font-font-bh-100dpi
 Requires:	xorg-font-font-bh-lucidatypewriter-100dpi
 Requires:	xorg-font-font-bitstream-100dpi
 Provides:	XFree86-fonts-100dpi = %{epoch}:%{version}-%{release}
-Obsoletes:	X11-fonts-100dpi-ISO8859-1
-Obsoletes:	X11-fonts-100dpi-ISO8859-10
-Obsoletes:	X11-fonts-100dpi-ISO8859-13
-Obsoletes:	X11-fonts-100dpi-ISO8859-14
-Obsoletes:	X11-fonts-100dpi-ISO8859-15
-Obsoletes:	X11-fonts-100dpi-ISO8859-2
-Obsoletes:	X11-fonts-100dpi-ISO8859-3
-Obsoletes:	X11-fonts-100dpi-ISO8859-4
-Obsoletes:	X11-fonts-100dpi-ISO8859-9
+Obsoletes:	X11-fonts-100dpi-ISO8859-1 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-10 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-13 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-14 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-15 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-2 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-3 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-4 < 7
+Obsoletes:	X11-fonts-100dpi-ISO8859-9 < 7
 Obsoletes:	X11R6.1-100dpi-fonts
-Obsoletes:	XFree86-fonts-100dpi
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-1
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-10
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-13
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-14
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-15
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-2
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-3
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-4
-Obsoletes:	XFree86-fonts-100dpi-ISO8859-9
+Obsoletes:	XFree86-fonts-100dpi < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-1 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-10 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-13 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-14 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-15 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-2 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-3 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-4 < 5
+Obsoletes:	XFree86-fonts-100dpi-ISO8859-9 < 5
 
 %description -n X11-fonts-100dpi
 fonts-100dpi package that allows easier monolithic X11->modular xorg
@@ -1794,7 +1794,7 @@ Summary(pl.UTF-8):	Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monol
 Group:		Fonts
 Requires:	xorg-font-font-jis-misc
 Provides:	XFree86-fonts-JISX0201.1976-0 = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-JISX0201.1976-0
+Obsoletes:	XFree86-fonts-JISX0201.1976-0 < 5
 
 %description -n X11-fonts-JISX0201.1976-0
 fonts-JISX0201.1976-0 package that allows easier monolithic
@@ -1813,7 +1813,7 @@ Requires:	xorg-font-font-misc-cyrillic
 Requires:	xorg-font-font-screen-cyrillic
 Requires:	xorg-font-font-winitzki-cyrillic
 Provides:	XFree86-fonts-KOI8-R = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-KOI8-R
+Obsoletes:	XFree86-fonts-KOI8-R < 5
 
 %description -n X11-fonts-KOI8-R
 fonts-KOI8-R package that allows easier monolithic X11->modular xorg
@@ -1829,7 +1829,7 @@ Summary(pl.UTF-8):	Pakiet fonts-Ethiopic ułatwiający przejście z monolityczne
 Group:		Fonts
 Requires:	xorg-font-font-misc-ethiopic
 Provides:	XFree86-fonts-Ethiopic = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-Ethiopic
+Obsoletes:	XFree86-fonts-Ethiopic < 5
 
 %description -n X11-fonts-Ethiopic
 fonts-Ethiopic package that allows easier monolithic X11->modular xorg
@@ -1845,7 +1845,7 @@ Summary(pl.UTF-8):	Pakiet fonts-Syriac ułatwiający przejście z monolitycznego
 Group:		Fonts
 Requires:	xorg-font-font-misc-meltho
 Provides:	XFree86-fonts-Syriac = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-fonts-Syriac
+Obsoletes:	XFree86-fonts-Syriac < 5
 
 %description -n X11-fonts-Syriac
 fonts-Syriac package that allows easier monolithic X11->modular xorg
