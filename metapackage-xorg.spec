@@ -6,112 +6,121 @@ Release:	11
 Epoch:		1
 License:	GPL
 Group:		X11
-Requires:	xorg-app-iceauth
+Requires:	xcursor-theme-handhelds >= 1.0.3
+Requires:	xcursor-theme-redglass >= 1.0.3
+Requires:	xcursor-theme-whiteglass >= 1.0.3
+Requires:	xkeyboard-config >= 2.6
+Requires:	xorg-app-iceauth >= 1.0.5
 Requires:	xorg-app-rgb
-Requires:	xorg-app-sessreg
-Requires:	xorg-app-setxkbmap
+Requires:	xorg-app-sessreg >= 1.0.7
+Requires:	xorg-app-setxkbmap >= 1.3.0
 Requires:	xorg-app-twm
-Requires:	xorg-app-xauth
-Requires:	xorg-app-xdpyinfo
-Requires:	xorg-app-xkbcomp
+Requires:	xorg-app-xauth >= 1.0.7
+Requires:	xorg-app-xbacklight >= 1.1.2
+Requires:	xorg-app-xdpyinfo >= 1.3.0
+Requires:	xorg-app-xinput >= 1.6.0
+Requires:	xorg-app-xkbcomp >= 1.2.4
 Requires:	xorg-app-xmessage
-Requires:	xorg-app-xmodmap
-Requires:	xorg-app-xprop
-Requires:	xorg-app-xset
-Requires:	xorg-app-xsetroot
-Requires:	xorg-data-xbitmaps
-Requires:	xorg-driver-input-evdev
-Requires:	xorg-driver-input-keyboard
-Requires:	xorg-driver-input-mouse
-Requires:	xorg-driver-input-synaptics
+Requires:	xorg-app-xmodmap >= 1.0.7
+Requires:	xorg-app-xprop >= 1.2.1
+Requires:	xorg-app-xset >= 1.2.2
+Requires:	xorg-app-xsetroot >= 1.1.0
+Requires:	xorg-data-xbitmaps >= 1.1.1
+Requires:	xorg-driver-input-evdev >= 2.7.0
+Requires:	xorg-driver-input-keyboard >= 1.6.1
+Requires:	xorg-driver-input-mouse >= 1.7.2
+Requires:	xorg-driver-input-synaptics >= 1.6.1
+Requires:	xorg-driver-video-vmmouse >= 12.8.0
 Requires:	xorg-driver-video-apm
-Requires:	xorg-driver-video-ark
-Requires:	xorg-driver-video-ast
-Requires:	xorg-driver-video-ati
+Requires:	xorg-driver-video-ark >= 0.7.4
+Requires:	xorg-driver-video-ast >= 0.93.10
+Requires:	xorg-driver-video-ati >= 6.14.4
 Requires:	xorg-driver-video-chips
-Requires:	xorg-driver-video-cirrus
-Requires:	xorg-driver-video-dummy
-Requires:	xorg-driver-video-fbdev
-Requires:	xorg-driver-video-i128
+Requires:	xorg-driver-video-cirrus >= 1.4.0
+Requires:	xorg-driver-video-dummy >= 0.3.5
+Requires:	xorg-driver-video-fbdev >= 0.4.2
+Requires:	xorg-driver-video-i128 >= 1.3.5
 Requires:	xorg-driver-video-i740
-Requires:	xorg-driver-video-intel
-Requires:	xorg-driver-video-mga
-Requires:	xorg-driver-video-neomagic
+Requires:	xorg-driver-video-intel >= 2.19.0
+Requires:	xorg-driver-video-mach64 >= 6.9.1
+Requires:	xorg-driver-video-mga >= 1.5.0
+Requires:	xorg-driver-video-neomagic >= 1.2.6
 %ifarch mips
-Requires:	xorg-driver-video-newport
+Requires:	xorg-driver-video-newport >= 0.2.4
 %endif
-Requires:	xorg-driver-video-nv
-Requires:	xorg-driver-video-openchrome
+Requires:	xorg-driver-video-nv >= 2.1.18
+Requires:	xorg-driver-video-openchrome >= 0.2.906
+Requires:	xorg-driver-video-r128 >= 6.8.2
 Requires:	xorg-driver-video-rendition
 Requires:	xorg-driver-video-s3virge
-Requires:	xorg-driver-video-savage
-Requires:	xorg-driver-video-siliconmotion
-Requires:	xorg-driver-video-sis
+Requires:	xorg-driver-video-savage >= 2.3.4
+Requires:	xorg-driver-video-siliconmotion >= 1.7.6
+Requires:	xorg-driver-video-sis >= 0.10.4
 Requires:	xorg-driver-video-sisusb
-Requires:	xorg-driver-video-tdfx
+Requires:	xorg-driver-video-tdfx >= 1.4.4
 Requires:	xorg-driver-video-tseng
-Requires:	xorg-driver-video-trident
-Requires:	xorg-driver-video-v4l
-Requires:	xorg-driver-video-vesa
-Requires:	xorg-driver-video-vmware
-Requires:	xorg-driver-video-voodoo
-#Requires:	xorg-driver-video-vsfb
-Requires:	xorg-font-encodings
-Requires:	xorg-font-font-adobe-utopia-type1
-Requires:	xorg-font-font-alias
-Requires:	xorg-font-font-arabic-misc
-Requires:	xorg-font-font-bh-ttf
-Requires:	xorg-font-font-bh-type1
-Requires:	xorg-font-font-bitstream-type1
-Requires:	xorg-font-font-cursor-misc
-Requires:	xorg-font-font-daewoo-misc
-Requires:	xorg-font-font-dec-misc
-Requires:	xorg-font-font-ibm-type1
-Requires:	xorg-font-font-isas-misc
-Requires:	xorg-font-font-micro-misc
-Requires:	xorg-font-font-misc-ethiopic
-Requires:	xorg-font-font-misc-meltho
-Requires:	xorg-font-font-misc-misc
-Requires:	xorg-font-font-misc-misc-base
-Requires:	xorg-font-font-mutt-misc
-Requires:	xorg-font-font-schumacher-misc
-Requires:	xorg-font-font-sony-misc
-Requires:	xorg-font-font-sun-misc
-Requires:	xorg-font-font-xfree86-type1
-Requires:	xorg-lib-libICE
-Requires:	xorg-lib-libSM
-Requires:	xorg-lib-libX11
-Requires:	xorg-lib-libXScrnSaver
-Requires:	xorg-lib-libXau
-Requires:	xorg-lib-libXcomposite
-Requires:	xorg-lib-libXcursor
-Requires:	xorg-lib-libXdamage
-Requires:	xorg-lib-libXdmcp
-Requires:	xorg-lib-libXext
-Requires:	xorg-lib-libXfixes
-Requires:	xorg-lib-libXfont
-Requires:	xorg-lib-libXft
-Requires:	xorg-lib-libXi
-Requires:	xorg-lib-libXinerama
-Requires:	xorg-lib-libXmu
+Requires:	xorg-driver-video-trident >= 1.3.5
+Requires:	xorg-driver-video-v4l >= 0.2.0
+Requires:	xorg-driver-video-vesa >= 2.3.1
+Requires:	xorg-driver-video-vmware >= 12.0.2
+Requires:	xorg-driver-video-voodoo >= 1.2.4
+Requires:	xorg-font-encodings >= 1.0.4
+Requires:	xorg-font-font-adobe-utopia-type1 >= 1.0.4
+Requires:	xorg-font-font-alias >= 1.0.3
+Requires:	xorg-font-font-arabic-misc >= 1.0.3
+Requires:	xorg-font-font-bh-ttf >= 1.0.3
+Requires:	xorg-font-font-bh-type1 >= 1.0.3
+Requires:	xorg-font-font-bitstream-type1 >= 1.0.3
+Requires:	xorg-font-font-cursor-misc >= 1.0.3
+Requires:	xorg-font-font-daewoo-misc >= 1.0.3
+Requires:	xorg-font-font-dec-misc >= 1.0.3
+Requires:	xorg-font-font-ibm-type1 >= 1.0.3
+Requires:	xorg-font-font-isas-misc >= 1.0.3
+Requires:	xorg-font-font-micro-misc >= 1.0.3
+Requires:	xorg-font-font-misc-ethiopic >= 1.0.3
+Requires:	xorg-font-font-misc-meltho >= 1.0.3
+Requires:	xorg-font-font-misc-misc >= 1.1.2
+Requires:	xorg-font-font-misc-misc-base >= 1.1.2
+Requires:	xorg-font-font-mutt-misc >= 1.0.3
+Requires:	xorg-font-font-schumacher-misc >= 1.1.2
+Requires:	xorg-font-font-sony-misc >= 1.0.3
+Requires:	xorg-font-font-sun-misc >= 1.0.3
+Requires:	xorg-font-font-xfree86-type1 >= 1.0.4
+Requires:	xorg-lib-libICE >= 1.0.8
+Requires:	xorg-lib-libSM >= 1.2.1
+Requires:	xorg-lib-libX11 >= 1.5.0
+Requires:	xorg-lib-libXScrnSaver >= 1.2.2
+Requires:	xorg-lib-libXau >= 1.0.7
+Requires:	xorg-lib-libXaw >= 1.0.11
+Requires:	xorg-lib-libXcomposite >= 0.4.3
+Requires:	xorg-lib-libXcursor >= 1.1.13
+Requires:	xorg-lib-libXdamage >= 1.1.3
+Requires:	xorg-lib-libXdmcp >= 1.1.1
+Requires:	xorg-lib-libXext >= 1.3.1
+Requires:	xorg-lib-libXfixes >= 5.0
+Requires:	xorg-lib-libXfont >= 1.4.5
+Requires:	xorg-lib-libXft >= 2.3.1
+Requires:	xorg-lib-libXi >= 1.6.1
+Requires:	xorg-lib-libXinerama >= 1.1.2
+Requires:	xorg-lib-libXmu >= 1.1.1
 Requires:	xorg-lib-libXp
-Requires:	xorg-lib-libXpm
-Requires:	xorg-lib-libXrandr
-Requires:	xorg-lib-libXrender
-Requires:	xorg-lib-libXres
-Requires:	xorg-lib-libXt
-Requires:	xorg-lib-libXtst
-Requires:	xorg-lib-libXv
-Requires:	xorg-lib-libXvMC
-Requires:	xorg-lib-libXxf86dga
-Requires:	xorg-lib-libXxf86vm
-Requires:	xorg-lib-libdmx
-Requires:	xorg-lib-libfontenc
-Requires:	xorg-lib-libpciaccess
-Requires:	xorg-lib-libxkbfile
-Requires:	xorg-xserver-libdri
-Requires:	xorg-xserver-libglx
-Requires:	xorg-xserver-server
+Requires:	xorg-lib-libXpm >= 3.5.10
+Requires:	xorg-lib-libXrandr >= 1.3.2
+Requires:	xorg-lib-libXrender >= 0.9.7
+Requires:	xorg-lib-libXres >= 1.0.6
+Requires:	xorg-lib-libXt >= 1.1.3
+Requires:	xorg-lib-libXtst >= 1.2.1
+Requires:	xorg-lib-libXv >= 1.0.7
+Requires:	xorg-lib-libXvMC >= 1.0.7
+Requires:	xorg-lib-libXxf86dga >= 1.1.3
+Requires:	xorg-lib-libXxf86vm >= 1.1.2
+Requires:	xorg-lib-libdmx >= 1.1.2
+Requires:	xorg-lib-libfontenc >= 1.1.1
+Requires:	xorg-lib-libpciaccess >= 0.13.1
+Requires:	xorg-lib-libxkbfile >= 1.0.8
+Requires:	xorg-xserver-libdri >= 1.12.2
+Requires:	xorg-xserver-libglx >= 1.12.2
+Requires:	xorg-xserver-server >= 1.12.2
 Obsoletes:	X11-driver-apm < 1:7.0.0-13
 Obsoletes:	X11-driver-cyrix < 1:7.0.0-5
 Obsoletes:	X11-driver-firegl < 1:7.0.0-14
@@ -120,6 +129,7 @@ Obsoletes:	X11-driver-glint < 1:7.7-9
 Obsoletes:	X11-driver-glint-dri < 1:7.7-9
 Obsoletes:	X11-driver-i810-dri < 1:7.0.0-23
 Obsoletes:	X11-driver-mga-dri < 1:7.0.0-23
+Obsoletes:	X11-driver-nsc < 1:7.0.0-8
 Obsoletes:	X11-driver-nvidia-legacy < 1:7.0.0-13
 Obsoletes:	X11-driver-nvidia-legacy-devel < 1:7.0.0-13
 Obsoletes:	X11-driver-nvidia-legacy-progs < 1:7.0.0-13
@@ -165,48 +175,48 @@ Summary(pl.UTF-8):	Pakiet X11 ułatwiający przejście z monolitycznego X11 na m
 Group:		X11
 Requires:	xorg-app-bitmap
 Requires:	xorg-app-editres
-Requires:	xorg-app-iceauth
-Requires:	xorg-app-mkfontdir
-Requires:	xorg-app-mkfontscale
+Requires:	xorg-app-iceauth >= 1.0.5
+Requires:	xorg-app-mkfontdir >= 1.0.7
+Requires:	xorg-app-mkfontscale >= 1.1.0
 Requires:	xorg-app-rgb
 Requires:	xorg-app-rstart
 Requires:	xorg-app-scripts
-Requires:	xorg-app-setxkbmap
-Requires:	xorg-app-smproxy
-Requires:	xorg-app-x11perf
+Requires:	xorg-app-setxkbmap >= 1.3.0
+Requires:	xorg-app-smproxy >= 1.0.5
+Requires:	xorg-app-x11perf >= 1.5.4
 Requires:	xorg-app-xclipboard
-Requires:	xorg-app-xcmsdb
+Requires:	xorg-app-xcmsdb >= 1.0.4
 Requires:	xorg-app-xconsole
-Requires:	xorg-app-xcursorgen
+Requires:	xorg-app-xcursorgen >= 1.0.5
 Requires:	xorg-app-xditview
-Requires:	xorg-app-xdpyinfo
+Requires:	xorg-app-xdpyinfo >= 1.3.0
 Requires:	xorg-app-xf86dga
-Requires:	xorg-app-xgamma
-Requires:	xorg-app-xhost
+Requires:	xorg-app-xgamma >= 1.0.5
+Requires:	xorg-app-xhost >= 1.0.5
 Requires:	xorg-app-xinit
-Requires:	xorg-app-xkbevd
+Requires:	xorg-app-xkbevd >= 1.1.3
 Requires:	xorg-app-xkbprint
-Requires:	xorg-app-xkbutils
-Requires:	xorg-app-xlsatoms
-Requires:	xorg-app-xlsclients
+Requires:	xorg-app-xkbutils >= 1.0.3
+Requires:	xorg-app-xlsatoms >= 1.1.1
+Requires:	xorg-app-xlsclients >= 1.1.2
 Requires:	xorg-app-xlsfonts
 Requires:	xorg-app-xmh
-Requires:	xorg-app-xmodmap
-Requires:	xorg-app-xprop
-Requires:	xorg-app-xrandr
-Requires:	xorg-app-xrdb
-Requires:	xorg-app-xrefresh
-Requires:	xorg-app-xset
-Requires:	xorg-app-xsetroot
+Requires:	xorg-app-xmodmap >= 1.0.7
+Requires:	xorg-app-xprop >= 1.2.1
+Requires:	xorg-app-xrandr >= 1.3.5
+Requires:	xorg-app-xrdb >= 1.0.9
+Requires:	xorg-app-xrefresh >= 1.0.4
+Requires:	xorg-app-xset >= 1.2.2
+Requires:	xorg-app-xsetroot >= 1.1.0
 Requires:	xorg-app-xsm
 Requires:	xorg-app-xstdcmap
 Requires:	xorg-app-xvidtune
-Requires:	xorg-app-xvinfo
-Requires:	xorg-app-xwd
-Requires:	xorg-app-xwud
-Requires:	xorg-data-xbitmaps
-Requires:	xorg-docs
-Requires:	xorg-lib-libXpm-utils
+Requires:	xorg-app-xvinfo >= 1.1.1
+Requires:	xorg-app-xwd >= 1.0.5
+Requires:	xorg-app-xwud >= 1.0.4
+Requires:	xorg-data-xbitmaps >= 1.1.1
+Requires:	xorg-docs >= 1.7
+Requires:	xorg-lib-libXpm-utils >= 3.5.10
 Requires:	xorg-util-imake
 Requires:	xorg-util-lndir
 Provides:	XFree86 = %{epoch}:%{version}-%{release}
@@ -222,7 +232,7 @@ xorg.
 Summary:	OpenGL-core package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet OpenGL-core ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-xserver-server
+Requires:	xorg-xserver-server >= 1.12.2
 Provides:	XFree86-OpenGL-core = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-OpenGL-core < 1:5
 
@@ -302,7 +312,7 @@ modularne xorg.
 Summary:	Xnest package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet Xnest ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-xserver-Xnest
+Requires:	xorg-xserver-Xnest >= 1.12.2
 Provides:	XFree86-Xnest = %{epoch}:%{version}-%{release}
 
 %description -n X11-Xnest
@@ -317,8 +327,8 @@ Summary:	Xserver package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet Xserver ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
 Requires:	dbus
-Requires:	xorg-driver-input-evdev
-Requires:	xorg-xserver-server
+Requires:	xorg-driver-input-evdev >= 2.7.0
+Requires:	xorg-xserver-server >= 1.12.2
 Provides:	XFree86-Xserver = %{epoch}:%{version}-%{release}
 
 %description -n X11-Xserver
@@ -333,7 +343,7 @@ xorg.
 Summary:	Xvfb package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet Xvfb ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-xserver-Xvfb
+Requires:	xorg-xserver-Xvfb >= 1.12.2
 Provides:	XFree86-Xvfb = %{epoch}:%{version}-%{release}
 
 %description -n X11-Xvfb
@@ -347,58 +357,71 @@ xorg.
 Summary:	devel package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet devel ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-app-bdftopcf
-Requires:	xorg-lib-libFS-devel
-Requires:	xorg-lib-libICE-devel
-Requires:	xorg-lib-libSM-devel
-Requires:	xorg-lib-libX11-devel
-Requires:	xorg-lib-libXau-devel
-Requires:	xorg-lib-libXaw-devel
-Requires:	xorg-lib-libXcomposite-devel
-Requires:	xorg-lib-libXcursor-devel
-Requires:	xorg-lib-libXdamage-devel
-Requires:	xorg-lib-libXdmcp-devel
-Requires:	xorg-lib-libXfixes-devel
-Requires:	xorg-lib-libXfont-devel
-Requires:	xorg-lib-libXft-devel
-Requires:	xorg-lib-libXmu-devel
-Requires:	xorg-lib-libXpm-devel
+Requires:	xorg-app-bdftopcf >= 1.0.3
+Requires:	xorg-lib-libFS-devel >= 1.0.4
+Requires:	xorg-lib-libICE-devel >= 1.0.8
+Requires:	xorg-lib-libSM-devel >= 1.2.1
+Requires:	xorg-lib-libX11-devel >= 1.5.0
+Requires:	xorg-lib-libXau-devel >= 1.0.7
+Requires:	xorg-lib-libXaw-devel >= 1.0.11
+Requires:	xorg-lib-libXcomposite-devel >= 0.4.3
+Requires:	xorg-lib-libXcursor-devel >= 1.1.13
+Requires:	xorg-lib-libXdamage-devel >= 1.1.3
+Requires:	xorg-lib-libXdmcp-devel >= 1.1.1
+Requires:	xorg-lib-libXext-devel >= 1.3.1
+Requires:	xorg-lib-libXfixes-devel >= 5.0
+Requires:	xorg-lib-libXfont-devel >= 1.4.5
+Requires:	xorg-lib-libXft-devel >= 2.3.1
+Requires:	xorg-lib-libXi-devel >= 1.6.1
+Requires:	xorg-lib-libXinerama-devel >= 1.1.2
+Requires:	xorg-lib-libXmu-devel >= 1.1.1
+Requires:	xorg-lib-libXpm-devel >= 3.5.10
 Requires:	xorg-lib-libXprintAppUtil-devel
 Requires:	xorg-lib-libXprintUtil-devel
-Requires:	xorg-lib-libXrandr-devel
-Requires:	xorg-lib-libXrender-devel
-Requires:	xorg-lib-libXres-devel
-Requires:	xorg-lib-libXt-devel
-Requires:	xorg-lib-libXv-devel
-Requires:	xorg-lib-libXvMC-devel
-Requires:	xorg-lib-libfontenc-devel
-Requires:	xorg-lib-libxkbfile-devel
-Requires:	xorg-proto-bigreqsproto-devel
-Requires:	xorg-proto-compositeproto-devel
-Requires:	xorg-proto-damageproto-devel
-Requires:	xorg-proto-dmxproto-devel
-Requires:	xorg-proto-fixesproto-devel
+Requires:	xorg-lib-libXrandr-devel >= 1.3.2
+Requires:	xorg-lib-libXrender-devel >= 0.9.7
+Requires:	xorg-lib-libXres-devel >= 1.0.6
+Requires:	xorg-lib-libXt-devel >= 1.1.3
+Requires:	xorg-lib-libXv-devel >= 1.0.7
+Requires:	xorg-lib-libXvMC-devel >= 1.0.7
+Requires:	xorg-lib-libXxf86dga-devel >= 1.1.3
+Requires:	xorg-lib-libXxf86vm-devel >= 1.1.2
+Requires:	xorg-lib-libdmx-devel >= 1.1.2
+Requires:	xorg-lib-libfontenc-devel >= 1.1.1
+Requires:	xorg-lib-libpciaccess-devel >= 0.13.1
+Requires:	xorg-lib-libxkbfile-devel >= 1.0.8
+Requires:	xorg-lib-xtrans-devel >= 1.2.7
+Requires:	xorg-proto-bigreqsproto-devel >= 1.1.2
+Requires:	xorg-proto-compositeproto-devel >= 0.4.2
+Requires:	xorg-proto-damageproto-devel >= 1.2.1
+Requires:	xorg-proto-dmxproto-devel >= 2.3.1
+Requires:	xorg-proto-dri2proto-devel >= 2.6
+Requires:	xorg-proto-fixesproto-devel >= 5.0
 Requires:	xorg-proto-fontcacheproto-devel
-Requires:	xorg-proto-fontsproto-devel
-Requires:	xorg-proto-inputproto-devel
-Requires:	xorg-proto-kbproto-devel
+Requires:	xorg-proto-fontsproto-devel >= 2.1.2
+Requires:	xorg-proto-glproto-devel >= 1.4.15
+Requires:	xorg-proto-inputproto-devel >= 2.2
+Requires:	xorg-proto-kbproto-devel >= 1.0.6
 Requires:	xorg-proto-printproto-devel
-Requires:	xorg-proto-randrproto-devel
-Requires:	xorg-proto-recordproto-devel
-Requires:	xorg-proto-renderproto-devel
-Requires:	xorg-proto-resourceproto-devel
-Requires:	xorg-proto-scrnsaverproto-devel
-Requires:	xorg-proto-videoproto-devel
-Requires:	xorg-proto-xcmiscproto-devel
-Requires:	xorg-proto-xextproto-devel
-Requires:	xorg-proto-xf86bigfontproto-devel
-Requires:	xorg-proto-xf86dgaproto-devel
+Requires:	xorg-proto-randrproto-devel >= 1.3.2
+Requires:	xorg-proto-recordproto-devel >= 1.14.2
+Requires:	xorg-proto-renderproto-devel >= 0.11.1
+Requires:	xorg-proto-resourceproto-devel >= 1.2.0
+Requires:	xorg-proto-scrnsaverproto-devel >= 1.2.2
+Requires:	xorg-proto-videoproto-devel >= 2.3.1
+Requires:	xorg-proto-xcmiscproto-devel >= 1.2.2
+Requires:	xorg-proto-xextproto-devel >= 7.2.1
+Requires:	xorg-proto-xf86bigfontproto-devel >= 1.2.0
+Requires:	xorg-proto-xf86dgaproto-devel >= 2.1
+Requires:	xorg-proto-xf86driproto-devel >= 2.1.1
 Requires:	xorg-proto-xf86miscproto-devel
 Requires:	xorg-proto-xf86rushproto-devel
-Requires:	xorg-proto-xf86vidmodeproto-devel
-Requires:	xorg-proto-xineramaproto-devel
-Requires:	xorg-proto-xproto-devel
+Requires:	xorg-proto-xf86vidmodeproto-devel >= 2.3.1
+Requires:	xorg-proto-xineramaproto-devel >= 1.2.1
+Requires:	xorg-proto-xproto-devel >= 7.0.23
 Requires:	xorg-proto-xproxymngproto-devel
+Requires:	xorg-sgml-doctools >= 1.11
+Requires:	xorg-util-util-macros >= 1.17
 Provides:	XFree86-devel = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-devel < 1:7
@@ -415,7 +438,7 @@ xorg.
 Summary:	Xserver-devel package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet Xserver-devel ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-xserver-server-devel
+Requires:	xorg-xserver-server-devel >= 1.12.2
 Provides:	XFree86-Xserver-devel = %{epoch}:%{version}-%{release}
 
 %description -n X11-Xserver-devel
@@ -445,7 +468,7 @@ modularne xorg.
 Summary:	driver-ark package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-ark ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-ark
+Requires:	xorg-driver-video-ark >= 0.7.4
 Provides:	XFree86-driver-ark = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-ark
@@ -460,7 +483,7 @@ modularne xorg.
 Summary:	driver-ati package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-ati ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-ati
+Requires:	xorg-driver-video-ati >= 6.14.4
 Provides:	XFree86-driver-ati = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-ati
@@ -475,7 +498,7 @@ modularne xorg.
 Summary:	driver-radeon package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-radeon ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-ati
+Requires:	xorg-driver-video-ati >= 6.14.4
 Provides:	X11-driver-radeon = %{epoch}:%{version}-%{release}
 Provides:	XFree86-driver-radeon = %{epoch}:%{version}-%{release}
 
@@ -491,7 +514,7 @@ modularne xorg.
 Summary:	driver-r128 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-r128 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-ati
+Requires:	xorg-driver-video-r128 >= 6.8.2
 Provides:	X11-driver-r128 = %{epoch}:%{version}-%{release}
 Provides:	XFree86-driver-r128 = %{epoch}:%{version}-%{release}
 
@@ -537,7 +560,7 @@ modularne xorg.
 Summary:	driver-cirrus package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-cirrus ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-cirrus
+Requires:	xorg-driver-video-cirrus >= 1.4.0
 Provides:	XFree86-driver-cirrus = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-cirrus
@@ -552,7 +575,7 @@ modularne xorg.
 Summary:	driver-fbdev package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-fbdev ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-fbdev
+Requires:	xorg-driver-video-fbdev >= 0.4.2
 Provides:	XFree86-driver-fbdev = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-fbdev
@@ -567,7 +590,7 @@ modularne xorg.
 Summary:	driver-i128 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-i128 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-i128
+Requires:	xorg-driver-video-i128 >= 1.3.5
 Provides:	XFree86-driver-i128 = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-i128
@@ -582,7 +605,7 @@ modularne xorg.
 Summary:	driver-i2c package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-i2c ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-xserver-server
+Requires:	xorg-xserver-server >= 1.12.2
 Provides:	XFree86-driver-i2c = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-i2c
@@ -627,7 +650,7 @@ modularne xorg.
 Summary:	driver-mga package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-mga ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-mga
+Requires:	xorg-driver-video-mga >= 1.5.0
 Provides:	XFree86-driver-mga = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-mga
@@ -642,7 +665,7 @@ modularne xorg.
 Summary:	driver-neomagic package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-neomagic ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-neomagic
+Requires:	xorg-driver-video-neomagic >= 1.2.6
 Provides:	XFree86-driver-neomagic = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-neomagic
@@ -657,7 +680,7 @@ modularne xorg.
 Summary:	driver-newport package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-newport ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-newport
+Requires:	xorg-driver-video-newport >= 0.2.4
 Provides:	XFree86-driver-newport = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-newport
@@ -687,7 +710,7 @@ modularne xorg.
 Summary:	driver-nv package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-nv ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-nv
+Requires:	xorg-driver-video-nv >= 2.1.18
 Provides:	XFree86-driver-nv = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-nv
@@ -772,7 +795,7 @@ modularne xorg.
 Summary:	driver-savage package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-savage ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-savage
+Requires:	xorg-driver-video-savage >= 2.3.4
 Provides:	XFree86-driver-savage = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-savage
@@ -787,7 +810,7 @@ modularne xorg.
 Summary:	driver-siliconmotion package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-siliconmotion ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-siliconmotion
+Requires:	xorg-driver-video-siliconmotion >= 1.7.6
 Provides:	XFree86-driver-siliconmotion = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-siliconmotion
@@ -802,7 +825,7 @@ na modularne xorg.
 Summary:	driver-sis package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-sis ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-sis
+Requires:	xorg-driver-video-sis >= 0.10.4
 Provides:	XFree86-driver-sis = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-sis
@@ -877,7 +900,7 @@ modularne xorg.
 Summary:	driver-suncg6 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-suncg6 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-suncg6
+Requires:	xorg-driver-video-suncg6 >= 1.1.1
 Provides:	XFree86-driver-suncg6 = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-suncg6
@@ -892,7 +915,7 @@ modularne xorg.
 Summary:	driver-sunffb package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-sunffb ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-sunffb
+Requires:	xorg-driver-video-sunffb >= 1.2.1
 Provides:	XFree86-driver-sunffb = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-sunffb
@@ -937,7 +960,7 @@ modularne xorg.
 Summary:	driver-tdfx package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-tdfx ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-tdfx
+Requires:	xorg-driver-video-tdfx >= 1.4.4
 Provides:	XFree86-driver-tdfx = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-tdfx
@@ -952,7 +975,7 @@ modularne xorg.
 Summary:	driver-trident package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-trident ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-trident
+Requires:	xorg-driver-video-trident >= 1.3.5
 Provides:	XFree86-driver-trident = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-trident
@@ -982,7 +1005,7 @@ modularne xorg.
 Summary:	driver-vmware package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-vmware ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-driver-video-vmware
+Requires:	xorg-driver-video-vmware >= 12.0.2
 Provides:	XFree86-driver-vmware = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-vmware
@@ -1001,15 +1024,15 @@ Requires:	xorg-app-bitmap
 Requires:	xorg-app-xditview
 Requires:	xorg-app-xmh
 # help poldek out a bit specifying these packages explicitly
-Requires:	xorg-lib-libXi
-Requires:	xorg-lib-libXtst
+Requires:	xorg-lib-libXi >= 1.6.1
+Requires:	xorg-lib-libXtst >= 1.2.1
 # Rest of libs deps will be fetched on per so-name rule.
 Provides:	X11-DPS
 Provides:	XFree86-libs = %{epoch}:%{version}-%{release}
 # Common obsoletes:
 Obsoletes:	X11-DPS < 1:7
-Obsoletes:	X11-Xprint < 1:7
-Obsoletes:	X11-Xprt < 1:7
+Obsoletes:	X11-Xprint < 1:7.0.0-3
+Obsoletes:	X11-Xprt < 1:7.0.0-3
 Obsoletes:	X11-common < 1:7
 Obsoletes:	XFree86-DPS < 1:5
 Obsoletes:	XFree86-common < 1:5
@@ -1025,12 +1048,13 @@ xorg.
 Summary:	modules package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet modules ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-app-xkbcomp
-Requires:	xorg-driver-input-keyboard
-Requires:	xorg-driver-input-mouse
-Requires:	xorg-driver-video-v4l
-Requires:	xorg-driver-video-vesa
-#Requires:	xorg-driver-video-vga
+Requires:	xorg-app-xkbcomp >= 1.2.4
+Requires:	xorg-driver-input-joystick >= 1.6.1
+Requires:	xorg-driver-input-keyboard >= 1.6.1
+Requires:	xorg-driver-input-mouse >= 1.7.2
+Requires:	xorg-driver-input-void >= 1.4.0
+Requires:	xorg-driver-video-v4l >= 0.2.0
+Requires:	xorg-driver-video-vesa >= 2.3.1
 Provides:	XFree86-modules = %{epoch}:%{version}-%{release}
 # not all deps here but we don't want to bring all modules on upgrade
 
@@ -1046,7 +1070,7 @@ xorg.
 Summary:	setup package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet setup ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-xserver-server
+Requires:	xorg-xserver-server >= 1.12.2
 Provides:	XFree86-setup = %{epoch}:%{version}-%{release}
 
 %description -n X11-setup
@@ -1060,36 +1084,36 @@ xorg.
 Summary:	static package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet static ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-lib-libFS-static
-Requires:	xorg-lib-libICE-static
-Requires:	xorg-lib-libSM-static
-Requires:	xorg-lib-libX11-static
-Requires:	xorg-lib-libXScrnSaver-static
-Requires:	xorg-lib-libXau-static
-Requires:	xorg-lib-libXcomposite-static
-Requires:	xorg-lib-libXcursor-static
-Requires:	xorg-lib-libXdamage-static
-Requires:	xorg-lib-libXdmcp-static
-Requires:	xorg-lib-libXext-static
-Requires:	xorg-lib-libXfixes-static
-Requires:	xorg-lib-libXfont-static
-Requires:	xorg-lib-libXft-static
-Requires:	xorg-lib-libXi-static
-Requires:	xorg-lib-libXinerama-static
-Requires:	xorg-lib-libXmu-static
+Requires:	xorg-lib-libFS-static >= 1.0.4
+Requires:	xorg-lib-libICE-static >= 1.0.8
+Requires:	xorg-lib-libSM-static >= 1.2.1
+Requires:	xorg-lib-libX11-static >= 1.5.0
+Requires:	xorg-lib-libXScrnSaver-static >= 1.2.2
+Requires:	xorg-lib-libXau-static >= 1.0.7
+Requires:	xorg-lib-libXcomposite-static >= 0.4.3
+Requires:	xorg-lib-libXcursor-static >= 1.1.13
+Requires:	xorg-lib-libXdamage-static >= 1.1.3
+Requires:	xorg-lib-libXdmcp-static >= 1.1.1
+Requires:	xorg-lib-libXext-static >= 1.3.1
+Requires:	xorg-lib-libXfixes-static >= 5.0
+Requires:	xorg-lib-libXfont-static >= 1.4.5
+Requires:	xorg-lib-libXft-static >= 2.3.1
+Requires:	xorg-lib-libXi-static >= 1.6.1
+Requires:	xorg-lib-libXinerama-static >= 1.1.2
+Requires:	xorg-lib-libXmu-static >= 1.1.1
 Requires:	xorg-lib-libXp-static
-Requires:	xorg-lib-libXpm-static
-Requires:	xorg-lib-libXrandr-static
-Requires:	xorg-lib-libXrender-static
-Requires:	xorg-lib-libXres-static
-Requires:	xorg-lib-libXt-static
-Requires:	xorg-lib-libXtst-static
-Requires:	xorg-lib-libXv-static
-Requires:	xorg-lib-libXvMC-static
-Requires:	xorg-lib-libXxf86dga-static
-Requires:	xorg-lib-libXxf86vm-static
-Requires:	xorg-lib-libfontenc-static
-Requires:	xorg-lib-libxkbfile-static
+Requires:	xorg-lib-libXpm-static >= 3.5.10
+Requires:	xorg-lib-libXrandr-static >= 1.3.2
+Requires:	xorg-lib-libXrender-static >= 0.9.7
+Requires:	xorg-lib-libXres-static >= 1.0.6
+Requires:	xorg-lib-libXt-static >= 1.1.3
+Requires:	xorg-lib-libXtst-static >= 1.2.1
+Requires:	xorg-lib-libXv-static >= 1.0.7
+Requires:	xorg-lib-libXvMC-static >= 1.0.7
+Requires:	xorg-lib-libXxf86dga-static >= 1.1.3
+Requires:	xorg-lib-libXxf86vm-static >= 1.1.2
+Requires:	xorg-lib-libfontenc-static >= 1.1.1
+Requires:	xorg-lib-libxkbfile-static >= 1.0.8
 Provides:	XFree86-static = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-static < 1:7
@@ -1115,21 +1139,21 @@ Requires:	xorg-app-listres
 Requires:	xorg-app-oclock
 Requires:	xorg-app-showfont
 Requires:	xorg-app-viewres
-Requires:	xorg-app-x11perf
+Requires:	xorg-app-x11perf >= 1.5.4
 Requires:	xorg-app-xbiff
 Requires:	xorg-app-xcalc
 Requires:	xorg-app-xclipboard
 Requires:	xorg-app-xclock
 Requires:	xorg-app-xdbedizzy
 Requires:	xorg-app-xditview
-Requires:	xorg-app-xdriinfo
+Requires:	xorg-app-xdriinfo >= 1.0.4
 Requires:	xorg-app-xedit
-Requires:	xorg-app-xev
+Requires:	xorg-app-xev >= 1.2.0
 Requires:	xorg-app-xeyes
 Requires:	xorg-app-xfd
 Requires:	xorg-app-xfontsel
 Requires:	xorg-app-xgc
-Requires:	xorg-app-xkill
+Requires:	xorg-app-xkill >= 1.0.3
 Requires:	xorg-app-xload
 Requires:	xorg-app-xlogo
 Requires:	xorg-app-xmag
@@ -1138,10 +1162,10 @@ Requires:	xorg-app-xmessage
 Requires:	xorg-app-xmh
 Requires:	xorg-app-xmore
 Requires:	xorg-app-xplsprinters
-Requires:	xorg-app-xpr
+Requires:	xorg-app-xpr >= 1.0.4
 Requires:	xorg-app-xprehashprinterlist
-Requires:	xorg-app-xprop
-Requires:	xorg-app-xwininfo
+Requires:	xorg-app-xprop >= 1.2.1
+Requires:	xorg-app-xwininfo >= 1.1.2
 Provides:	XFree86-tools = %{epoch}:%{version}-%{release}
 
 %description -n X11-tools
@@ -1157,6 +1181,7 @@ Summary(pl.UTF-8):	Pakiet imake ułatwiający przejście z monolitycznego X11 na
 Group:		X11
 Requires:	xorg-util-gccmakedep
 Requires:	xorg-util-imake
+Requires:	xorg-util-makedepend >= 1.0.4
 Provides:	XFree86-imake = %{epoch}:%{version}-%{release}
 
 %description -n X11-imake
@@ -1170,7 +1195,7 @@ xorg.
 Summary:	sessreg package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet sessreg ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-app-sessreg
+Requires:	xorg-app-sessreg >= 1.0.7
 Provides:	XFree86-sessreg = %{epoch}:%{version}-%{release}
 
 %description -n X11-sessreg
@@ -1201,7 +1226,7 @@ xorg.
 Summary:	xauth package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet xauth ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-app-xauth
+Requires:	xorg-app-xauth >= 1.0.7
 Provides:	XFree86-xauth = %{epoch}:%{version}-%{release}
 
 %description -n X11-xauth
@@ -1245,25 +1270,25 @@ xorg.
 Summary:	fonts package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-font-encodings
-Requires:	xorg-font-font-adobe-utopia-type1
-Requires:	xorg-font-font-arabic-misc
-Requires:	xorg-font-font-bh-ttf
-Requires:	xorg-font-font-bh-type1
-Requires:	xorg-font-font-bitstream-type1
-Requires:	xorg-font-font-daewoo-misc
-Requires:	xorg-font-font-dec-misc
-Requires:	xorg-font-font-ibm-type1
-Requires:	xorg-font-font-isas-misc
-Requires:	xorg-font-font-micro-misc
-Requires:	xorg-font-font-misc-ethiopic
-Requires:	xorg-font-font-misc-meltho
-Requires:	xorg-font-font-misc-misc
-Requires:	xorg-font-font-mutt-misc
-Requires:	xorg-font-font-schumacher-misc
-Requires:	xorg-font-font-sony-misc
-Requires:	xorg-font-font-sun-misc
-Requires:	xorg-font-font-xfree86-type1
+Requires:	xorg-font-encodings >= 1.0.4
+Requires:	xorg-font-font-adobe-utopia-type1 >= 1.0.4
+Requires:	xorg-font-font-arabic-misc >= 1.0.3
+Requires:	xorg-font-font-bh-ttf >= 1.0.3
+Requires:	xorg-font-font-bh-type1 >= 1.0.3
+Requires:	xorg-font-font-bitstream-type1 >= 1.0.3
+Requires:	xorg-font-font-daewoo-misc >= 1.0.3
+Requires:	xorg-font-font-dec-misc >= 1.0.3
+Requires:	xorg-font-font-ibm-type1 >= 1.0.3
+Requires:	xorg-font-font-isas-misc >= 1.0.3
+Requires:	xorg-font-font-micro-misc >= 1.0.3
+Requires:	xorg-font-font-misc-ethiopic >= 1.0.3
+Requires:	xorg-font-font-misc-meltho >= 1.0.3
+Requires:	xorg-font-font-misc-misc >= 1.1.2
+Requires:	xorg-font-font-mutt-misc >= 1.0.3
+Requires:	xorg-font-font-schumacher-misc >= 1.1.2
+Requires:	xorg-font-font-sony-misc >= 1.0.3
+Requires:	xorg-font-font-sun-misc >= 1.0.3
+Requires:	xorg-font-font-xfree86-type1 >= 1.0.4
 Provides:	XFree86-fonts = %{epoch}:%{version}-%{release}
 
 %description -n X11-fonts
@@ -1277,7 +1302,7 @@ xorg.
 Summary:	fonts-utils package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-utils ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	xorg-font-font-util
+Requires:	xorg-font-font-util >= 1.3.0
 Provides:	XFree86-fonts-utils = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-utils < 5
 
@@ -1293,8 +1318,8 @@ modularne xorg.
 Summary:	fonts-base package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-base ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-cursor-misc
-Requires:	xorg-font-font-misc-misc-base
+Requires:	xorg-font-font-cursor-misc >= 1.0.3
+Requires:	xorg-font-font-misc-misc-base >= 1.1.2
 
 %description -n X11-fonts-base
 fonts-base package that allows easier monolithic X11->modular xorg
@@ -1308,7 +1333,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-1 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-1 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-1
+Requires:	xorg-font-font-misc-misc-ISO8859-1 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-1 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-1 < 5
 
@@ -1324,7 +1349,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-2 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-2 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-2
+Requires:	xorg-font-font-misc-misc-ISO8859-2 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-2 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-2 < 5
 
@@ -1340,7 +1365,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-3 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-3 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-3
+Requires:	xorg-font-font-misc-misc-ISO8859-3 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-3 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-3 < 5
 
@@ -1356,7 +1381,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-4 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-4 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-4
+Requires:	xorg-font-font-misc-misc-ISO8859-4 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-4 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-4 < 5
 
@@ -1372,7 +1397,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-5 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-5 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-5
+Requires:	xorg-font-font-misc-misc-ISO8859-5 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-5 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-5 < 5
 
@@ -1388,7 +1413,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-7 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-7 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-7
+Requires:	xorg-font-font-misc-misc-ISO8859-7 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-7 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-7 < 5
 
@@ -1404,7 +1429,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-8 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-8 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-8
+Requires:	xorg-font-font-misc-misc-ISO8859-8 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-8 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-8 < 5
 
@@ -1420,7 +1445,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-9 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-9 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-9
+Requires:	xorg-font-font-misc-misc-ISO8859-9 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-9 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-9 < 5
 
@@ -1436,7 +1461,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-10 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-10 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-10
+Requires:	xorg-font-font-misc-misc-ISO8859-10 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-10 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-10 < 5
 
@@ -1452,7 +1477,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-11 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-11 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-11
+Requires:	xorg-font-font-misc-misc-ISO8859-11 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-11 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-11 < 5
 
@@ -1468,7 +1493,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-13 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-13 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-13
+Requires:	xorg-font-font-misc-misc-ISO8859-13 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-13 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-13 < 5
 
@@ -1484,7 +1509,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-14 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-14 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-14
+Requires:	xorg-font-font-misc-misc-ISO8859-14 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-14 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-14 < 5
 
@@ -1500,7 +1525,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-15 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-15 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-15
+Requires:	xorg-font-font-misc-misc-ISO8859-15 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-15 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-15 < 5
 
@@ -1516,7 +1541,7 @@ modularne xorg.
 Summary:	fonts-ISO8859-16 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-ISO8859-16 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-misc-ISO8859-16
+Requires:	xorg-font-font-misc-misc-ISO8859-16 >= 1.1.2
 Provides:	XFree86-fonts-ISO8859-16 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-ISO8859-16 < 5
 
@@ -1532,11 +1557,11 @@ modularne xorg.
 Summary:	fonts-75dpi package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-75dpi ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-adobe-75dpi
-Requires:	xorg-font-font-adobe-utopia-75dpi
-Requires:	xorg-font-font-bh-75dpi
-Requires:	xorg-font-font-bh-lucidatypewriter-75dpi
-Requires:	xorg-font-font-bitstream-75dpi
+Requires:	xorg-font-font-adobe-75dpi >= 1.0.3
+Requires:	xorg-font-font-adobe-utopia-75dpi >= 1.0.4
+Requires:	xorg-font-font-bh-75dpi >= 1.0.3
+Requires:	xorg-font-font-bh-lucidatypewriter-75dpi >= 1.0.3
+Requires:	xorg-font-font-bitstream-75dpi >= 1.0.3
 Provides:	XFree86-fonts-75dpi = %{epoch}:%{version}-%{release}
 Obsoletes:	X11-fonts-75dpi-ISO8859-1 < 7
 Obsoletes:	X11-fonts-75dpi-ISO8859-10 < 7
@@ -1571,11 +1596,11 @@ modularne xorg.
 Summary:	fonts-100dpi package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-100dpi ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-adobe-100dpi
-Requires:	xorg-font-font-adobe-utopia-100dpi
-Requires:	xorg-font-font-bh-100dpi
-Requires:	xorg-font-font-bh-lucidatypewriter-100dpi
-Requires:	xorg-font-font-bitstream-100dpi
+Requires:	xorg-font-font-adobe-100dpi >= 1.0.3
+Requires:	xorg-font-font-adobe-utopia-100dpi >= 1.0.4
+Requires:	xorg-font-font-bh-100dpi >= 1.0.3
+Requires:	xorg-font-font-bh-lucidatypewriter-100dpi >= 1.0.3
+Requires:	xorg-font-font-bitstream-100dpi >= 1.0.3
 Provides:	XFree86-fonts-100dpi = %{epoch}:%{version}-%{release}
 Obsoletes:	X11-fonts-100dpi-ISO8859-1 < 7
 Obsoletes:	X11-fonts-100dpi-ISO8859-10 < 7
@@ -1610,7 +1635,7 @@ modularne xorg.
 Summary:	fonts-JISX0201.1976-0 package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-JISX0201.1976-0 ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-jis-misc
+Requires:	xorg-font-font-jis-misc >= 1.0.3
 Provides:	XFree86-fonts-JISX0201.1976-0 = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-JISX0201.1976-0 < 5
 
@@ -1626,10 +1651,10 @@ X11 na modularne xorg.
 Summary:	fonts-KOI8-R package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-KOI8-R ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-cronyx-cyrillic
-Requires:	xorg-font-font-misc-cyrillic
-Requires:	xorg-font-font-screen-cyrillic
-Requires:	xorg-font-font-winitzki-cyrillic
+Requires:	xorg-font-font-cronyx-cyrillic >= 1.0.3
+Requires:	xorg-font-font-misc-cyrillic >= 1.0.3
+Requires:	xorg-font-font-screen-cyrillic >= 1.0.4
+Requires:	xorg-font-font-winitzki-cyrillic >= 1.0.3
 Provides:	XFree86-fonts-KOI8-R = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-KOI8-R < 5
 
@@ -1645,7 +1670,7 @@ modularne xorg.
 Summary:	fonts-Ethiopic package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-Ethiopic ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-ethiopic
+Requires:	xorg-font-font-misc-ethiopic >= 1.0.3
 Provides:	XFree86-fonts-Ethiopic = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-Ethiopic < 5
 
@@ -1661,7 +1686,7 @@ modularne xorg.
 Summary:	fonts-Syriac package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet fonts-Syriac ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		Fonts
-Requires:	xorg-font-font-misc-meltho
+Requires:	xorg-font-font-misc-meltho >= 1.0.3
 Provides:	XFree86-fonts-Syriac = %{epoch}:%{version}-%{release}
 Obsoletes:	XFree86-fonts-Syriac < 5
 
@@ -1682,8 +1707,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11
 %defattr(644,root,root,755)
-#%files -n X11-Xprint
-#%defattr(644,root,root,755)
 %files -n X11-OpenGL-core
 %defattr(644,root,root,755)
 %files -n X11-OpenGL-libGL
@@ -1696,8 +1719,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-Xnest
 %defattr(644,root,root,755)
-#%files -n X11-Xprt
-#%defattr(644,root,root,755)
 %files -n X11-Xserver
 %defattr(644,root,root,755)
 %files -n X11-Xvfb
