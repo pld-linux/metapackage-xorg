@@ -1547,7 +1547,7 @@ Obsoletes:	X11-fonts-75dpi-ISO8859-2 < 7
 Obsoletes:	X11-fonts-75dpi-ISO8859-3 < 7
 Obsoletes:	X11-fonts-75dpi-ISO8859-4 < 7
 Obsoletes:	X11-fonts-75dpi-ISO8859-9 < 7
-Obsoletes:	X11R6.1-75dpi-fonts
+Obsoletes:	X11R6.1-75dpi-fonts < 3.2
 Obsoletes:	XFree86-fonts-75dpi < 5
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-1 < 5
 Obsoletes:	XFree86-fonts-75dpi-ISO8859-10 < 5
@@ -1586,7 +1586,7 @@ Obsoletes:	X11-fonts-100dpi-ISO8859-2 < 7
 Obsoletes:	X11-fonts-100dpi-ISO8859-3 < 7
 Obsoletes:	X11-fonts-100dpi-ISO8859-4 < 7
 Obsoletes:	X11-fonts-100dpi-ISO8859-9 < 7
-Obsoletes:	X11R6.1-100dpi-fonts
+Obsoletes:	X11R6.1-100dpi-fonts < 3.2
 Obsoletes:	XFree86-fonts-100dpi < 5
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-1 < 5
 Obsoletes:	XFree86-fonts-100dpi-ISO8859-10 < 5
