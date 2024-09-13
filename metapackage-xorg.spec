@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.7
-Release:	12
+Release:	13
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -30,7 +30,7 @@ Requires:	xorg-driver-input-evdev >= 2.7.0
 Requires:	xorg-driver-input-keyboard >= 1.6.1
 Requires:	xorg-driver-input-mouse >= 1.7.2
 Requires:	xorg-driver-input-synaptics >= 1.6.1
-Requires:	xorg-driver-video-vmmouse >= 12.8.0
+Requires:	xorg-driver-input-vmmouse >= 12.8.0
 Requires:	xorg-driver-video-apm
 Requires:	xorg-driver-video-ark >= 0.7.4
 Requires:	xorg-driver-video-ast >= 0.93.10
