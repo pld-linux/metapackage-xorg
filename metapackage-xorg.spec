@@ -24,23 +24,33 @@ Requires:	xorg-driver-input-evdev
 Requires:	xorg-driver-input-keyboard
 Requires:	xorg-driver-input-mouse
 Requires:	xorg-driver-input-synaptics
+Requires:	xorg-driver-video-apm
 Requires:	xorg-driver-video-ark
 Requires:	xorg-driver-video-ast
 Requires:	xorg-driver-video-ati
+Requires:	xorg-driver-video-chips
+Requires:	xorg-driver-video-cirrus
 Requires:	xorg-driver-video-dummy
 Requires:	xorg-driver-video-fbdev
-#%ifarch %{ix86}
-#Requires:	xorg-driver-video-geode
-#%endif
 Requires:	xorg-driver-video-i128
 Requires:	xorg-driver-video-i740
 Requires:	xorg-driver-video-intel
 Requires:	xorg-driver-video-mga
+Requires:	xorg-driver-video-neomagic
+%ifarch mips
+Requires:	xorg-driver-video-newport
+%endif
 Requires:	xorg-driver-video-nv
 Requires:	xorg-driver-video-openchrome
+Requires:	xorg-driver-video-rendition
+Requires:	xorg-driver-video-s3virge
+Requires:	xorg-driver-video-savage
+Requires:	xorg-driver-video-siliconmotion
+Requires:	xorg-driver-video-sis
 Requires:	xorg-driver-video-sisusb
 Requires:	xorg-driver-video-tdfx
 Requires:	xorg-driver-video-tseng
+Requires:	xorg-driver-video-trident
 Requires:	xorg-driver-video-v4l
 Requires:	xorg-driver-video-vesa
 Requires:	xorg-driver-video-vmware
@@ -102,7 +112,24 @@ Requires:	xorg-lib-libxkbfile
 Requires:	xorg-xserver-libdri
 Requires:	xorg-xserver-libglx
 Requires:	xorg-xserver-server
-Obsoletes:	X11-driver-glide < 1:7
+Obsoletes:	X11-driver-apm < 1:7.0.0-13
+Obsoletes:	X11-driver-cyrix < 1:7.0.0-5
+Obsoletes:	X11-driver-firegl < 1:7.0.0-14
+Obsoletes:	X11-driver-glide < 1:7.7-11
+Obsoletes:	X11-driver-glint < 1:7.7-9
+Obsoletes:	X11-driver-glint-dri < 1:7.7-9
+Obsoletes:	X11-driver-i810-dri < 1:7.0.0-23
+Obsoletes:	X11-driver-mga-dri < 1:7.0.0-23
+Obsoletes:	X11-driver-nvidia-legacy < 1:7.0.0-13
+Obsoletes:	X11-driver-nvidia-legacy-devel < 1:7.0.0-13
+Obsoletes:	X11-driver-nvidia-legacy-progs < 1:7.0.0-13
+Obsoletes:	X11-driver-nsc < 1:7.0.0-8
+Obsoletes:	X11-driver-r128-dri < 1:7.0.0-23
+Obsoletes:	X11-driver-s3 < 1:7.7-9
+Obsoletes:	X11-driver-sis-dri < 1:7.0.0-23
+Obsoletes:	X11-driver-tdfx-dri < 1:7.0.0-23
+Obsoletes:	X11-driver-tga < 1:7.7-9
+Obsoletes:	X11-driver-via < 1:7.0.0-5
 Obsoletes:	xorg-app-lbxproxy < 1.0.4
 Obsoletes:	xorg-app-luit < 1.1.2
 Obsoletes:	xorg-app-proxymngr < 1.0.5
@@ -269,22 +296,6 @@ upgrade.
 
 %description -n X11-OpenGL-devel -l pl.UTF-8
 Pakiet OpenGL-devel ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-OpenGL-static
-Summary:	OpenGL-static package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet OpenGL-static ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	Mesa-libGL-static
-Provides:	XFree86-OpenGL-static = %{epoch}:%{version}-%{release}
-Obsoletes:	XFree86-OpenGL-static < 1:5
-
-%description -n X11-OpenGL-static
-OpenGL-static package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-OpenGL-static -l pl.UTF-8
-Pakiet OpenGL-static ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-Xnest
@@ -492,21 +503,6 @@ upgrade.
 Pakiet driver-r128 ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
-%package -n X11-driver-r128-dri
-Summary:	driver-r128-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-r128-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	Mesa-dri-driver-ati-rage128
-Provides:	XFree86-driver-r128-dri = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-r128-dri
-driver-r128-dri package that allows easier monolithic X11->modular
-xorg upgrade.
-
-%description -n X11-driver-r128-dri -l pl.UTF-8
-Pakiet driver-r128-dri ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
 %package -n X11-driver-radeon-dri
 Summary:	driver-radeon-dri package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-radeon-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
@@ -565,50 +561,6 @@ upgrade.
 
 %description -n X11-driver-fbdev -l pl.UTF-8
 Pakiet driver-fbdev ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-firegl
-Summary:	driver-firegl package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-firegl ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-driver-video-fglrx
-
-%description -n X11-driver-firegl
-driver-firegl package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-firegl -l pl.UTF-8
-Pakiet driver-firegl ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-glint
-Summary:	driver-glint package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-glint ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-driver-video-glint
-Provides:	XFree86-driver-glint = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-glint
-driver-glint package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-glint -l pl.UTF-8
-Pakiet driver-glint ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-glint-dri
-Summary:	driver-glint-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-glint-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-#Requires:	Mesa-dri-driver-glint
-Provides:	XFree86-driver-glint-dri = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-glint-dri
-driver-glint-dri package that allows easier monolithic X11->modular
-xorg upgrade.
-
-%description -n X11-driver-glint-dri -l pl.UTF-8
-Pakiet driver-glint-dri ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-i128
@@ -671,23 +623,6 @@ upgrade.
 Pakiet driver-i810 ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
-%package -n X11-driver-i810-dri
-Summary:	driver-i810-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-i810-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	Mesa-dri-driver-intel-i810
-Requires:	Mesa-dri-driver-intel-i915
-Requires:	Mesa-dri-driver-intel-i965
-Provides:	XFree86-driver-i810-dri = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-i810-dri
-driver-i810-dri package that allows easier monolithic X11->modular
-xorg upgrade.
-
-%description -n X11-driver-i810-dri -l pl.UTF-8
-Pakiet driver-i810-dri ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
 %package -n X11-driver-mga
 Summary:	driver-mga package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-mga ułatwiający przejście z monolitycznego X11 na modularne xorg
@@ -701,21 +636,6 @@ upgrade.
 
 %description -n X11-driver-mga -l pl.UTF-8
 Pakiet driver-mga ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-mga-dri
-Summary:	driver-mga-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-mga-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	Mesa-dri-driver-matrox
-Provides:	XFree86-driver-mga-dri = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-mga-dri
-driver-mga-dri package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-mga-dri -l pl.UTF-8
-Pakiet driver-mga-dri ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-neomagic
@@ -818,46 +738,6 @@ xorg upgrade.
 Pakiet driver-nvidia-progs ułatwiający przejście z monolitycznego X11
 na modularne xorg.
 
-%package -n X11-driver-nvidia-legacy
-Summary:	driver-nvidia-legacy package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-nvidia-legacy ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-driver-video-nouveau
-
-%description -n X11-driver-nvidia-legacy
-driver-nvidia-legacy package that allows easier monolithic
-X11->modular xorg upgrade.
-
-%description -n X11-driver-nvidia-legacy -l pl.UTF-8
-Pakiet driver-nvidia-legacy ułatwiający przejście z monolitycznego X11
-na modularne xorg.
-
-%package -n X11-driver-nvidia-legacy-devel
-Summary:	driver-nvidia-legacy-devel package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-nvidia-legacy-devel ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-
-%description -n X11-driver-nvidia-legacy-devel
-driver-nvidia-legacy-devel package that allows easier monolithic
-X11->modular xorg upgrade.
-
-%description -n X11-driver-nvidia-legacy-devel -l pl.UTF-8
-Pakiet driver-nvidia-legacy-devel ułatwiający przejście z
-monolitycznego X11 na modularne xorg.
-
-%package -n X11-driver-nvidia-legacy-progs
-Summary:	driver-nvidia-legacy-progs package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-nvidia-legacy-progs ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-
-%description -n X11-driver-nvidia-legacy-progs
-driver-nvidia-legacy-progs package that allows easier monolithic
-X11->modular xorg upgrade.
-
-%description -n X11-driver-nvidia-legacy-progs -l pl.UTF-8
-Pakiet driver-nvidia-legacy-progs ułatwiający przejście z
-monolitycznego X11 na modularne xorg.
-
 %package -n X11-driver-rendition
 Summary:	driver-rendition package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-rendition ułatwiający przejście z monolitycznego X11 na modularne xorg
@@ -877,7 +757,6 @@ modularne xorg.
 Summary:	driver-s3virge package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-s3virge ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-dri-driver-s3virge
 Requires:	xorg-driver-video-s3virge
 Provides:	XFree86-driver-s3virge = %{epoch}:%{version}-%{release}
 
@@ -889,26 +768,10 @@ upgrade.
 Pakiet driver-s3virge ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
-%package -n X11-driver-s3
-Summary:	driver-s3 package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-s3 ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-driver-video-s3
-Provides:	XFree86-driver-s3 = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-s3
-driver-s3 package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-s3 -l pl.UTF-8
-Pakiet driver-s3 ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
 %package -n X11-driver-savage
 Summary:	driver-savage package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-savage ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-dri-driver-savage
 Requires:	xorg-driver-video-savage
 Provides:	XFree86-driver-savage = %{epoch}:%{version}-%{release}
 
@@ -948,21 +811,6 @@ upgrade.
 
 %description -n X11-driver-sis -l pl.UTF-8
 Pakiet driver-sis ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-sis-dri
-Summary:	driver-sis-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-sis-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	Mesa-dri-driver-sis
-Provides:	XFree86-driver-sis-dri = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-sis-dri
-driver-sis-dri package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-sis-dri -l pl.UTF-8
-Pakiet driver-sis-dri ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
 %package -n X11-driver-sisusb
@@ -1044,7 +892,6 @@ modularne xorg.
 Summary:	driver-sunffb package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-sunffb ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-dri-driver-ffb
 Requires:	xorg-driver-video-sunffb
 Provides:	XFree86-driver-sunffb = %{epoch}:%{version}-%{release}
 
@@ -1101,41 +948,10 @@ upgrade.
 Pakiet driver-tdfx ułatwiający przejście z monolitycznego X11 na
 modularne xorg.
 
-%package -n X11-driver-tdfx-dri
-Summary:	driver-tdfx-dri package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-tdfx-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	Mesa-dri-driver-tdfx
-Provides:	XFree86-driver-tdfx-dri = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-tdfx-dri
-driver-tdfx-dri package that allows easier monolithic X11->modular
-xorg upgrade.
-
-%description -n X11-driver-tdfx-dri -l pl.UTF-8
-Pakiet driver-tdfx-dri ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
-%package -n X11-driver-tga
-Summary:	driver-tga package that allows easier monolithic X11->modular xorg upgrade
-Summary(pl.UTF-8):	Pakiet driver-tga ułatwiający przejście z monolitycznego X11 na modularne xorg
-Group:		X11
-Requires:	xorg-driver-video-tga
-Provides:	XFree86-driver-tga = %{epoch}:%{version}-%{release}
-
-%description -n X11-driver-tga
-driver-tga package that allows easier monolithic X11->modular xorg
-upgrade.
-
-%description -n X11-driver-tga -l pl.UTF-8
-Pakiet driver-tga ułatwiający przejście z monolitycznego X11 na
-modularne xorg.
-
 %package -n X11-driver-trident
 Summary:	driver-trident package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-trident ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-dri-driver-trident
 Requires:	xorg-driver-video-trident
 Provides:	XFree86-driver-trident = %{epoch}:%{version}-%{release}
 
@@ -1277,7 +1093,9 @@ Requires:	xorg-lib-libxkbfile-static
 Provides:	XFree86-static = %{epoch}:%{version}-%{release}
 # common obsoletes
 Obsoletes:	X11-DPS-static < 1:7
+Obsoletes:	X11-OpenGL-static < 1:7.0.0-13
 Obsoletes:	XFree86-DPS-static < 1:5
+Obsoletes:	XFree86-OpenGL-static < 1:5
 
 %description -n X11-static
 static package that allows easier monolithic X11->modular xorg
@@ -1876,10 +1694,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-OpenGL-devel
 %defattr(644,root,root,755)
-%if 0
-%files -n X11-OpenGL-static
-%defattr(644,root,root,755)
-%endif
 %files -n X11-Xnest
 %defattr(644,root,root,755)
 #%files -n X11-Xprt
@@ -1892,42 +1706,24 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-Xserver-devel
 %defattr(644,root,root,755)
-%if 0
 %files -n X11-driver-apm
 %defattr(644,root,root,755)
-%endif
 %files -n X11-driver-ark
 %defattr(644,root,root,755)
 %files -n X11-driver-ati
 %defattr(644,root,root,755)
 %files -n X11-driver-radeon
 %defattr(644,root,root,755)
-%if 0
 %files -n X11-driver-r128
 %defattr(644,root,root,755)
-%files -n X11-driver-r128-dri
-%defattr(644,root,root,755)
-%endif
 %files -n X11-driver-radeon-dri
 %defattr(644,root,root,755)
-%if 0
 %files -n X11-driver-chips
 %defattr(644,root,root,755)
 %files -n X11-driver-cirrus
 %defattr(644,root,root,755)
-%endif
 %files -n X11-driver-fbdev
 %defattr(644,root,root,755)
-%if 0
-%files -n X11-driver-firegl
-%defattr(644,root,root,755)
-%endif
-%if 0
-%files -n X11-driver-glint
-%defattr(644,root,root,755)
-%files -n X11-driver-glint-dri
-%defattr(644,root,root,755)
-%endif
 %files -n X11-driver-i128
 %defattr(644,root,root,755)
 %files -n X11-driver-i2c
@@ -1936,24 +1732,14 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-i810
 %defattr(644,root,root,755)
-%if 0
-%files -n X11-driver-i810-dri
-%defattr(644,root,root,755)
-%endif
 %files -n X11-driver-mga
-%defattr(644,root,root,755)
-%if 0
-%files -n X11-driver-mga-dri
 %defattr(644,root,root,755)
 %files -n X11-driver-neomagic
 %defattr(644,root,root,755)
-%endif
 %ifarch mips
 %files -n X11-driver-newport
 %defattr(644,root,root,755)
 %endif
-#%files -n X11-driver-nsc
-#%defattr(644,root,root,755)
 %files -n X11-driver-nv
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia
@@ -1962,18 +1748,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-nvidia-progs
 %defattr(644,root,root,755)
-%if 0
-%files -n X11-driver-nvidia-legacy
-%defattr(644,root,root,755)
-%files -n X11-driver-nvidia-legacy-devel
-%defattr(644,root,root,755)
-%files -n X11-driver-nvidia-legacy-progs
-%defattr(644,root,root,755)
 %files -n X11-driver-rendition
 %defattr(644,root,root,755)
 %files -n X11-driver-s3virge
-%defattr(644,root,root,755)
-%files -n X11-driver-s3
 %defattr(644,root,root,755)
 %files -n X11-driver-savage
 %defattr(644,root,root,755)
@@ -1981,9 +1758,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-sis
 %defattr(644,root,root,755)
-%files -n X11-driver-sis-dri
-%defattr(644,root,root,755)
-%endif
 %files -n X11-driver-sisusb
 %defattr(644,root,root,755)
 %ifarch sparc sparcv9 sparc64
@@ -2004,14 +1778,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 %files -n X11-driver-tdfx
 %defattr(644,root,root,755)
-%if 0
-%files -n X11-driver-tdfx-dri
-%defattr(644,root,root,755)
-%files -n X11-driver-tga
-%defattr(644,root,root,755)
 %files -n X11-driver-trident
 %defattr(644,root,root,755)
-%endif
 %files -n X11-driver-tseng
 %defattr(644,root,root,755)
 %files -n X11-driver-vmware
