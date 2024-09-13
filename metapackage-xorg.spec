@@ -530,7 +530,7 @@ modularne xorg.
 Summary:	driver-radeon-dri package that allows easier monolithic X11->modular xorg upgrade
 Summary(pl.UTF-8):	Pakiet driver-radeon-dri ułatwiający przejście z monolitycznego X11 na modularne xorg
 Group:		X11
-Requires:	Mesa-dri-driver-ati-radeon-R300
+Requires:	Mesa-dri-driver
 Provides:	XFree86-driver-radeon-dri = %{epoch}:%{version}-%{release}
 
 %description -n X11-driver-radeon-dri
