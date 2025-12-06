@@ -2,7 +2,7 @@ Summary:	Metapackage that installs a set of Xorg packages needed to run on any c
 Summary(pl.UTF-8):	Metapakiet instalujący zestaw pakietów potrzebnych by uruchomić Xorg na każdym sprzęcie
 Name:		metapackage-xorg
 Version:	7.7
-Release:	13
+Release:	14
 Epoch:		1
 License:	GPL
 Group:		X11
@@ -62,7 +62,7 @@ Requires:	xorg-driver-video-tseng
 Requires:	xorg-driver-video-trident >= 1.3.5
 Requires:	xorg-driver-video-v4l >= 0.2.0
 Requires:	xorg-driver-video-vesa >= 2.3.1
-Requires:	xorg-driver-video-vmware >= 12.0.2
+#Requires:	xorg-driver-video-vmware >= 12.0.2
 Requires:	xorg-driver-video-voodoo >= 1.2.4
 Requires:	xorg-font-encodings >= 1.0.4
 Requires:	xorg-font-font-adobe-utopia-type1 >= 1.0.4
@@ -1803,8 +1803,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -n X11-driver-tseng
 %defattr(644,root,root,755)
-%files -n X11-driver-vmware
-%defattr(644,root,root,755)
+#%files -n X11-driver-vmware
+#%defattr(644,root,root,755)
 %files -n X11-libs
 %defattr(644,root,root,755)
 %files -n X11-modules
